@@ -177,7 +177,10 @@ brothertrue/
 │   ├── test_cot_zero_leakage.py     # Channel separation & telemetry scrubbing test suite
 │   ├── test_biocognitive_bridge.py  # 20D vector, projector, and zero-target-leakage tests
 │   └── test_e2e_ecosystem.py        # 4-Tier integrated systems & boundary verification suite
+├── notebooks/
+│   └── BrotherTrue_Cloud_Distillation_9_Datasets.ipynb # Cloud-only 9-dataset HF streaming -> Drive distiller
 └── docs/
+    ├── TEACHER_DISTILLATION_GUIDE.md # Canonical Principal Teacher guide & future tutor rules
     ├── index.html                   # Interactive Biocognitive & Evidence Gate Web Lab (WCAG 2.2 AAA)
     ├── lab/                         # Modular CSS (W3C DTCG tokens, tabular-nums) & simulation engine
     ├── assets/                      # Custom AAA vector diagrams & OpenGraph social card
