@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "purpose": "own_decoder_contract_verification",
+  "student_initialization": "random_from_scratch",
+  "teacher_weights_included": false,
+  "model_weights_included": false,
+  "training_executed": false,
+  "commercial_readiness": "not_established",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "30c3d2306f799925c4602e72438bddd2e10b891ccf7fd86659eda78e3b507c2f",
+      "bytes": 7070
+    },
+    "voz_distribuida.py": {
+      "sha256": "f41b497e6ec437145644cadbf563f91576f44c79d28bcf771f21577b091efc97",
+      "bytes": 17340
+    },
+    "models/__init__.py": {
+      "sha256": "b35d44e1ba196ef2f57e0aafb96583b00b94e371123a2eae3213062d41128f0e",
+      "bytes": 327
+    },
+    "models/biocognitive_projector.py": {
+      "sha256": "bd2b3aecfdae9e0c88933f4455cf36340342e67bfefb7c0988f233363b9951ae",
+      "bytes": 9384
+    },
+    "models/qwen_adapter.py": {
+      "sha256": "4472d1d03aeaa8d2124ad0c3e0e3fb2cf8a774be7ab850c9e4dc2a23b343e87b",
+      "bytes": 20743
+    },
+    "models/cot_parser.py": {
+      "sha256": "12fe475345f7e2492dd863011d9a9ada5bd89480a105702c385b8a21c8df1615",
+      "bytes": 6342
+    },
+    "ode.py": {
+      "sha256": "4dd3a1d7aab4913d5adac8fa0a15d2dd1bbc763838d26ed14d09cf5c4a3b5c60",
+      "bytes": 5294
+    },
+    "neuroquimica.py": {
+      "sha256": "78cb227c896c039fda6691fda46f79cd3601fa330518c805422d66ddba89aec8",
+      "bytes": 7093
+    },
+    "farmacologia.py": {
+      "sha256": "a841dd1a94d7dfd73ef2991fe440e9311f51d49034f42ec4bd6ec478ad910856",
+      "bytes": 3826
+    },
+    "pensamento.py": {
+      "sha256": "09fbc04afe8050fb4e2a838eb9cff5370223f23efd283c0b16a772dc485240e8",
+      "bytes": 3766
+    },
+    "palavras.py": {
+      "sha256": "6e722a42b50852925343a2b543734cf15e974a42c5813b86460ec3c8f085aa1e",
+      "bytes": 3616
+    },
+    "memoria.py": {
+      "sha256": "7f3e494ec22eb9880d3582419cbf77de95bc19903f497fd43c0f52999921250a",
+      "bytes": 7359
+    },
+    "long_term_memory.py": {
+      "sha256": "c02ade11c1924a81d26a51a71697e8dbb39f988c9654e3bfc94ba4527e01f1d8",
+      "bytes": 5245
+    },
+    "ciclo_rem.py": {
+      "sha256": "5b4f2bdae2964e3e90f3c8f6823dfc37a3541479a8f0a0bd083fd61ce301c073",
+      "bytes": 2715
+    },
+    "semantica.py": {
+      "sha256": "1b0ff231309c30f9f40f5c9b6acd5ca321022d06811a2d6e1db089fbc7f656cb",
+      "bytes": 1609
+    },
+    "resource_governor.py": {
+      "sha256": "879e001db176dda2a986843450cae34d402524690b09189720e4c944b6b77cc3",
+      "bytes": 2506
+    },
+    "checkpoint_manager_safe.py": {
+      "sha256": "b59ee59a35e6888f56c8460336d66c459e536a677eea4bfe4889ba362aab97f2",
+      "bytes": 2038
+    },
+    "tokenizer_voz_novo_16k.json": {
+      "sha256": "1a74a137ebed499af8b198803b245b95f7f143321a075395c9029eb30fe85b83",
+      "bytes": 659706
+    },
+    "experimentos/industrial_readiness_2026_10_25/contracts/__init__.py": {
+      "sha256": "5c0bb655dba373a2201827d929e281189516ce0572e749f34f8a28f11d1e4f54",
+      "bytes": 444
+    },
+    "experimentos/industrial_readiness_2026_10_25/contracts/evidence.py": {
+      "sha256": "37bcc8a6fb1cf1e918d01a5e1e46f783afd25d4df8d52c7232a31cc2b01d3b3a",
+      "bytes": 5250
+    },
+    "experimentos/industrial_readiness_2026_10_25/contracts/rendering.py": {
+      "sha256": "b736fe28141dcf8543ab5145ab6cfcda3b99e2ef3f3ddb9d3ad88bdbf17aa52c",
+      "bytes": 4399
+    },
+    "experimentos/industrial_readiness_2026_10_25/contracts/state.py": {
+      "sha256": "c5d01319c8db522cd7481126fe1bd3eb1dceaac89e8463231a82b69fed66140d",
+      "bytes": 2771
+    },
+    "experimentos/industrial_readiness_2026_10_25/contracts/README.md": {
+      "sha256": "99bddff29d00af07bc3b6b60e7e47cb7523a7f06001b851ab73e02107f4b732e",
+      "bytes": 5174
+    },
+    "experimentos/industrial_readiness_2026_10_25/modeling/__init__.py": {
+      "sha256": "061b52d92465b3dffe6d1ceccaf70b2a2659da578245c7471df6b5638c7df87d",
+      "bytes": 68
+    },
+    "experimentos/industrial_readiness_2026_10_25/modeling/own_voice.py": {
+      "sha256": "1344e40e1b7eb802b0cd4e1a662c25b763fbbfe89327ab7acbc72330c8c97cba",
+      "bytes": 13864
+    },
+    "experimentos/industrial_readiness_2026_10_25/modeling/README.md": {
+      "sha256": "692ec528a2662ed5b0c703c4ffe6f27449a21ab88a13eb37e928fa1cc3ee0cc0",
+      "bytes": 3950
+    },
+    "experimentos/industrial_readiness_2026_10_25/tests/test_contracts.py": {
+      "sha256": "4b38a203c63559fd591570f83ec2d52cb4eb3a8a108b7b66639c913ae8c9e8ba",
+      "bytes": 7684
+    },
+    "experimentos/industrial_readiness_2026_10_25/tests/test_own_voice.py": {
+      "sha256": "da78ea9f94b95c815fb6fc5a23d94cf6d8ac33b8f337b21f7ee269ce80a5f0ac",
+      "bytes": 7641
+    },
+    "experimentos/industrial_readiness_2026_10_25/tests/test_runner_contract.py": {
+      "sha256": "8374c002c882bc83ee52c1c2d66320258a397758c14bcc8ad42205481da3585d",
+      "bytes": 3979
+    },
+    "experimentos/industrial_readiness_2026_10_25/training/own_decoder_runner.py": {
+      "sha256": "16775a5cf4c397cac5ca8e4f81804856a0a38594fb4eadfacf8919ee91b435a2",
+      "bytes": 22005
+    },
+    "experimentos/industrial_readiness_2026_10_25/README.md": {
+      "sha256": "9b42030374796750f54043116cf09e30275a188fd4062f563637157823c0fdf3",
+      "bytes": 4446
+    },
+    "experimentos/industrial_readiness_2026_10_25/ARTIFACT_CONTRACT.md": {
+      "sha256": "60b437eaa21bac74a1a7363f1c36f48a430985766cb157f98b598299c442815d",
+      "bytes": 3265
+    },
+    "experimentos/industrial_readiness_2026_10_25/evaluation/findings.md": {
+      "sha256": "3fc8b8e00688173154d56bb0bf78464fb1b86c9354b99d0cda37752ab24c0927",
+      "bytes": 3629
+    },
+    "experimentos/industrial_readiness_2026_10_25/evaluation/PROTOCOL.md": {
+      "sha256": "2e11db3834d541d6bfa28aa35437ac8b8420f0b68d50e386644c0387416a2858",
+      "bytes": 3089
+    }
+  }
+}

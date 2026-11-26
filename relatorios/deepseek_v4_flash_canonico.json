@@ -1,0 +1,11 @@
+{
+  "input": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_teacher_distillation.parquet",
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_canonico.parquet",
+  "total": 40513,
+  "accepted": 40513,
+  "rejected": 0,
+  "with_final_answer": 37561,
+  "with_tool_calls": 4925,
+  "with_think": 0,
+  "with_both": 1973
+}

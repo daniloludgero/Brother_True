@@ -1,0 +1,54 @@
+{
+  "checkpoint_step": 80,
+  "metrics": {
+    "train_loss": 6.858933925628662,
+    "val_loss": 6.704511880874634,
+    "step": 80,
+    "total_parameters": 50500611,
+    "trainable_parameters": 593944,
+    "dataset": "two_teacher_distillation"
+  },
+  "examples": [
+    {
+      "complexity": "brief",
+      "teacher": "qwen_base_brief",
+      "generated": {
+        "completion": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "brief",
+      "teacher": "qwen_base_brief",
+      "generated": {
+        "completion": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "complex",
+      "teacher": "qwen_agentic_lora",
+      "generated": {
+        "completion": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "complex",
+      "teacher": "qwen_agentic_lora",
+      "generated": {
+        "completion": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    }
+  ],
+  "dataset_rows": 23
+}

@@ -1,0 +1,8 @@
+{
+  "input": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_canonico.parquet",
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_schema_completo.parquet",
+  "total": 40513,
+  "schema_complete": 1973,
+  "requires_final_answer": true,
+  "requires_tool_calls": true
+}

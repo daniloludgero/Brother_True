@@ -1,0 +1,95 @@
+{
+  "model": "Voz 50M SFT LoRA",
+  "base_response_loss": {
+    "loss": 7.456313848495483,
+    "perplexity": 1730.756453870349,
+    "samples": 8
+  },
+  "sft_response_loss": {
+    "loss": 6.835841596126556,
+    "perplexity": 930.6112200475557,
+    "samples": 8
+  },
+  "examples": [
+    {
+      "prompt": "<|im_start|>user\nHii<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "Heloo jii",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>assistant\nCan't explain in text because I don't feel good today, I'm from ph<|im_end|>\n<|im_start|>user\nPhilippines? Well I think you are even I can't even ask the straight question I'm not even clear on my own texts<|im_end|>\n<|im_start|>assistant\nI can tell because I don't understand your sentence<|im_end|>\n<|im_start|>user\nYes yes ik<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "Anyway, where are you from?",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>assistant\nen svenne!<|im_end|>\n<|im_start|>user\nVA?!<|im_end|>\n<|im_start|>assistant\nvad händer bror?<|im_end|>\n<|im_start|>user\nVad som händer e att jag undviker den där mappen jag körde för bg är hemsk<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "tänker pröva den",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>user\nMan tired of taking several Ls…<|im_end|>\n<|im_start|>assistant\nAre you in any clan?<|im_end|>\n<|im_start|>user\nUhh what is that<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "Basically we make groups and duel other groups of duelers and the winner gets some pc",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>user\nMore free time to be alone<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "yeah i was buried in books",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>user\nNhi bola Good morning back<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "Aapne Gays ko bola gm",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>user\nLike the console?<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "wait what",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    },
+    {
+      "prompt": "<|im_start|>user\ni dont think i've ever loved loved any chocolate atp<|im_end|>\n<|im_start|>assistant\n",
+      "reference": "imagine not liking dark chocolate",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "unique_ratio": 1.0,
+        "ended_eos": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-10-18T21:49:23Z",
+  "hardware_local_aferido": {
+    "so": "linux",
+    "threads_torch": 2,
+    "ram_total_mb": 3781.03,
+    "ram_disponivel_mb": 2502.09,
+    "ram_percent_em_uso": 33.83,
+    "disco_c_livre_gb": 6.03,
+    "piso_seguranca_gb": 4.5,
+    "status_sentry": {
+      "cpu_percent": 0.7,
+      "ram_percent": 33.8,
+      "disk_free_gb": 6.03,
+      "paused": false
+    }
+  },
+  "analise_escalabilidade_modelos": {
+    "Voz_50M_Baseline": {
+      "estimativas": {
+        "num_params": 51524608,
+        "num_params_milhoes": 51.52,
+        "pesos_fp32_mb": 196.55,
+        "pesos_fp16_mb": 98.28,
+        "pesos_int8_mb": 49.14,
+        "treino_full_fp32_mb": 804.2,
+        "treino_full_fp16_mb": 411.1,
+        "treino_lora_mb": 376.34,
+        "ativacoes_mb": 18.0
+      },
+      "local_wsl": {
+        "inferencia_cpu_suportada": true,
+        "treino_lora_suportado": true,
+        "treino_full_suportado": true,
+        "consumo_disco_estimado_gb": 0.48,
+        "margem_disco_restante_gb": 5.55,
+        "piso_4_5gb_respeitado": true,
+        "recomendacao": "Execução e Fine-Tuning LoRA Plenamente Suportados"
+      },
+      "nuvem_colab": {
+        "gpu_t4_16gb_treino_full": true,
+        "gpu_a100_40gb_treino_full": true,
+        "isolamento_disco_local": true,
+        "repositorio_persistente": "/content/drive/MyDrive/brothertrue_cloud_workspace",
+        "recomendacao": "Treinamento Massivo em Escala Real Totalmente Habilitado"
+      }
+    },
+    "Voz_120M_Canonica": {
+      "estimativas": {
+        "num_params": 139184384,
+        "num_params_milhoes": 139.18,
+        "pesos_fp32_mb": 530.95,
+        "pesos_fp16_mb": 265.47,
+        "pesos_int8_mb": 132.74,
+        "treino_full_fp32_mb": 2141.79,
+        "treino_full_fp16_mb": 1079.89,
+        "treino_lora_mb": 730.8,
+        "ativacoes_mb": 18.0
+      },
+      "local_wsl": {
+        "inferencia_cpu_suportada": true,
+        "treino_lora_suportado": true,
+        "treino_full_suportado": false,
+        "consumo_disco_estimado_gb": 1.3,
+        "margem_disco_restante_gb": 4.74,
+        "piso_4_5gb_respeitado": true,
+        "recomendacao": "Execução e Fine-Tuning LoRA Plenamente Suportados"
+      },
+      "nuvem_colab": {
+        "gpu_t4_16gb_treino_full": true,
+        "gpu_a100_40gb_treino_full": true,
+        "isolamento_disco_local": true,
+        "repositorio_persistente": "/content/drive/MyDrive/brothertrue_cloud_workspace",
+        "recomendacao": "Treinamento Massivo em Escala Real Totalmente Habilitado"
+      }
+    },
+    "Voz_160M_Distribuida": {
+      "estimativas": {
+        "num_params": 162453504,
+        "num_params_milhoes": 162.45,
+        "pesos_fp32_mb": 619.71,
+        "pesos_fp16_mb": 309.86,
+        "pesos_int8_mb": 154.93,
+        "treino_full_fp32_mb": 2496.84,
+        "treino_full_fp16_mb": 1257.42,
+        "treino_lora_mb": 824.89,
+        "ativacoes_mb": 18.0
+      },
+      "local_wsl": {
+        "inferencia_cpu_suportada": true,
+        "treino_lora_suportado": true,
+        "treino_full_suportado": false,
+        "consumo_disco_estimado_gb": 1.51,
+        "margem_disco_restante_gb": 4.52,
+        "piso_4_5gb_respeitado": true,
+        "recomendacao": "Execução e Fine-Tuning LoRA Plenamente Suportados"
+      },
+      "nuvem_colab": {
+        "gpu_t4_16gb_treino_full": true,
+        "gpu_a100_40gb_treino_full": true,
+        "isolamento_disco_local": true,
+        "repositorio_persistente": "/content/drive/MyDrive/brothertrue_cloud_workspace",
+        "recomendacao": "Treinamento Massivo em Escala Real Totalmente Habilitado"
+      }
+    },
+    "Voz_200M_Ultra": {
+      "estimativas": {
+        "num_params": 198112256,
+        "num_params_milhoes": 198.11,
+        "pesos_fp32_mb": 755.74,
+        "pesos_fp16_mb": 377.87,
+        "pesos_int8_mb": 188.93,
+        "treino_full_fp32_mb": 3040.95,
+        "treino_full_fp16_mb": 1529.48,
+        "treino_lora_mb": 969.08,
+        "ativacoes_mb": 18.0
+      },
+      "local_wsl": {
+        "inferencia_cpu_suportada": true,
+        "treino_lora_suportado": false,
+        "treino_full_suportado": false,
+        "consumo_disco_estimado_gb": 1.85,
+        "margem_disco_restante_gb": 4.19,
+        "piso_4_5gb_respeitado": false,
+        "recomendacao": "Recomenda-se Offloading em Nuvem (Google Colab)"
+      },
+      "nuvem_colab": {
+        "gpu_t4_16gb_treino_full": true,
+        "gpu_a100_40gb_treino_full": true,
+        "isolamento_disco_local": true,
+        "repositorio_persistente": "/content/drive/MyDrive/brothertrue_cloud_workspace",
+        "recomendacao": "Treinamento Massivo em Escala Real Totalmente Habilitado"
+      }
+    }
+  },
+  "conclusao_arquitetural": "1. O hardware local suporta inferência e fine-tuning via adaptadores LoRA e projeção de condicionamento de modelos de 139M a 162M parâmetros, mantendo a RAM < 60% e o disco acima do piso de 4.5 GB. 2. O treinamento scratch de todos os parâmetros em FP32 excede a margem de segurança da RAM local de 3.8 GB, sendo direcionado para a infraestrutura de GPU em Nuvem (Google Colab T4/A100) com offloading no Google Drive."
+}

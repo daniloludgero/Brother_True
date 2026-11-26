@@ -1,0 +1,13 @@
+{
+  "teacher": "Qwen/Qwen2.5-0.5B-Instruct",
+  "teacher_parameters": 494032768,
+  "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\voz_sft_curado.jsonl",
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\sinais_professor_qwen_piloto.jsonl",
+  "requested": 8,
+  "written": 8,
+  "skipped": 0,
+  "dtype": "float32",
+  "max_input_tokens": 192,
+  "max_new_tokens": 16,
+  "sampling": "greedy"
+}

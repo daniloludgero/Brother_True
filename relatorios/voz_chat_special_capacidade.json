@@ -1,0 +1,96 @@
+{
+  "model": "Voz 50M chat special",
+  "vocab_size": 16387,
+  "special_ids": {
+    "<|im_start|>": 16384,
+    "<|im_end|>": 16385,
+    "<|end_of_text|>": 16386
+  },
+  "response_loss": {
+    "loss": 6.360828280448914,
+    "perplexity": 578.7255049526814,
+    "samples": 8
+  },
+  "examples": [
+    {
+      "reference": "For cotton pickin",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "As she should you were over here flirting with another girl",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "Slay queen",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "i also think its funny that a diamond 3 got shit on by a gold 3 love you bro",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "holiii muy bien :3",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "Benson, anda a laburar en el parque",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "yes. I live in the main city.",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    },
+    {
+      "reference": "okays :D",
+      "generated": {
+        "completion": "",
+        "new_tokens": 1,
+        "ended_eos": true,
+        "ended_im_end": false,
+        "unique_ratio": 1.0
+      }
+    }
+  ]
+}

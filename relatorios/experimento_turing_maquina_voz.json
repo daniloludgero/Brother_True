@@ -1,0 +1,108 @@
+{
+  "protocol": "VT-1 machine language",
+  "model": "C:\\Users\\Samsung\\Downloads\\brothertrue\\checkpoints_voz_50m_piloto\\best.pt",
+  "interpretation": "upper-bound prefix-following test; public Voz.gerar does not accept text context",
+  "sequence": [
+    {
+      "turns": 1,
+      "completion": "the the the the the the the the the the the the the the the the the the the the the the the the",
+      "score": {
+        "expected_tokens": {
+          "ACK 01": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 02": false
+        },
+        "matched": 0,
+        "unique_ratio_words": 0.041666666666666664,
+        "output_tokens": 24
+      },
+      "ended_special": false
+    },
+    {
+      "turns": 2,
+      "completion": "the the the the the the the the the the the the the the the the the the the the the the the the",
+      "score": {
+        "expected_tokens": {
+          "ACK 02": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 03": false
+        },
+        "matched": 0,
+        "unique_ratio_words": 0.041666666666666664,
+        "output_tokens": 24
+      },
+      "ended_special": false
+    },
+    {
+      "turns": 3,
+      "completion": "the the the the the the the the the the the the the the the the the the the the the the the the",
+      "score": {
+        "expected_tokens": {
+          "ACK 03": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 04": false
+        },
+        "matched": 0,
+        "unique_ratio_words": 0.041666666666666664,
+        "output_tokens": 24
+      },
+      "ended_special": false
+    },
+    {
+      "turns": 4,
+      "completion": "the the the the the the the the the the the the the the the the the the the the the the the the",
+      "score": {
+        "expected_tokens": {
+          "ACK 04": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 05": false
+        },
+        "matched": 0,
+        "unique_ratio_words": 0.041666666666666664,
+        "output_tokens": 24
+      },
+      "ended_special": false
+    },
+    {
+      "turns": 5,
+      "completion": "the the the the the the the the the the the the the the the the the the the the the the the the",
+      "score": {
+        "expected_tokens": {
+          "ACK 05": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 06": false
+        },
+        "matched": 0,
+        "unique_ratio_words": 0.041666666666666664,
+        "output_tokens": 24
+      },
+      "ended_special": false
+    },
+    {
+      "turns": 6,
+      "completion": "the the the the the the the the the the the the the the the the the the the the the the the the",
+      "score": {
+        "expected_tokens": {
+          "ACK 06": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 07": false
+        },
+        "matched": 0,
+        "unique_ratio_words": 0.041666666666666664,
+        "output_tokens": 24
+      },
+      "ended_special": false
+    }
+  ],
+  "summary": {
+    "max_matched": 0,
+    "turns_tested": 6,
+    "passed_any": false
+  }
+}

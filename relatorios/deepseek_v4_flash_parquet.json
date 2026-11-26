@@ -1,0 +1,22 @@
+{
+  "repo": "trjxter/DeepSeek-V4-Flash-0731-Teacher-Distillation-40513x",
+  "rows": 40513,
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_teacher_distillation.parquet",
+  "format": "parquet",
+  "compression": "zstd",
+  "fields": [
+    "prompt",
+    "response",
+    "kind",
+    "difficulty",
+    "bucket",
+    "generation_mode",
+    "finish_reason",
+    "secondary_capabilities",
+    "tool_definitions",
+    "source",
+    "teacher",
+    "usage",
+    "metadata"
+  ]
+}

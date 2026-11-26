@@ -1,0 +1,15 @@
+{
+  "model": "all-MiniLM-L6-v2 frozen semantic baseline",
+  "multiple_choice": {
+    "total": 1729,
+    "correct": 395,
+    "accuracy": 0.22845575477154426
+  },
+  "ddi": {
+    "cases": 15,
+    "reference_similarity_mean": 0.5352756381034851,
+    "reference_similarity_min": 0.3829086720943451
+  },
+  "visibility": "internal_only",
+  "warning": "Baseline semântico; ainda não é um preditor farmacológico treinado."
+}

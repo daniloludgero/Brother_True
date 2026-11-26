@@ -1,0 +1,27 @@
+{
+  "dataset_name": "treino_real_escala_consolidado_75_25",
+  "description": "Composição 75/25 de alta densidade semântica: 75% Síntese Especializada do Professor Gemini + 25% Diálogos Abertos HF em Português",
+  "train_file": "treino_real_escala/dados/treino_real_consolidado.jsonl",
+  "val_file": "treino_real_escala/dados/val_real_consolidado.jsonl",
+  "train_samples": 90,
+  "val_samples": 10,
+  "total_samples": 100,
+  "balance_ratio": {
+    "gemini_teacher_ratio": 0.75,
+    "hf_open_ratio": 0.25
+  },
+  "token_stats_train": {
+    "total_tokens": 14145,
+    "avg_tokens_per_sample": 157.2,
+    "min_tokens": 61,
+    "max_tokens": 370,
+    "vocab_size": 16384
+  },
+  "sha256": {
+    "train": "bb1fe33fb63bc77fc1fa976538a79ba1cebd4cb002c6101a3f5d97963196c328",
+    "val": "b30159afd17d31cef87f3083e2204f3e81fada38cf1274a6b8f605729ff1530a",
+    "gemini_raw": "b94763fba3f4dfd6f9c7c8861113d7e79baf6776cf68485793752372aa68733b",
+    "hf_raw": "fcfcadf1079a1dcdaea1717616d3d0006c06e14d2a060cd35804dcee9f253b55"
+  },
+  "seed": 42
+}

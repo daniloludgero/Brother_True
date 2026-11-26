@@ -1,0 +1,17 @@
+{
+  "ddi_reference_cases": 15,
+  "multiple_choice_cases": 1729,
+  "resting_state_in_range": true,
+  "hill_midpoint_max_error": 0.0,
+  "constants": {
+    "glutamato": 0.5,
+    "gaba": 0.5,
+    "acetilcolina": 0.5,
+    "dopamina": 0.5,
+    "noradrenalina": 0.5,
+    "serotonina": 0.5,
+    "adrenalina": 0.5,
+    "ocitocina": 0.5
+  },
+  "benchmark_visibility": "internal_only"
+}

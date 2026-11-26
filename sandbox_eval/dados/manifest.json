@@ -1,0 +1,16 @@
+{
+  "experiment": "sandbox_gemini_teacher_distillation_2026-10-18",
+  "teacher": "Gemini-Flash-High-PhD-Auditor",
+  "datasets": [
+    {
+      "dataset_name": "treino_voz_curado.jsonl",
+      "role": "conversational_biocognitive_sft",
+      "format": "ChatML_jsonl",
+      "total_lines": 110,
+      "size_bytes": 41869,
+      "sha256": "e997b6c1205df2c56426ea9c90c0e7df925fbf367a73e75bc4a4d983e9831831",
+      "teacher_approved": true,
+      "description": "Dataset de alta coerência léxica sintetizado e curado pelo Professor Gemini, eliminando ruídos Fortran e ensinando encerramento estrito de turnos com <eos>."
+    }
+  ]
+}

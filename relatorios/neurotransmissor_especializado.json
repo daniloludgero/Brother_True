@@ -1,0 +1,42 @@
+{
+  "module": "NeuroTransmissor + farmacologia",
+  "steps": 1000,
+  "initial_state": {
+    "dopamina": 0.5,
+    "serotonina": 0.5,
+    "noradrenalina": 0.5,
+    "adrenalina": 0.5,
+    "gaba": 0.5,
+    "ocitocina": 0.5,
+    "acetilcolina": 0.5,
+    "glutamato": 0.5
+  },
+  "final_state": {
+    "dopamina": 0.41965892910957336,
+    "serotonina": 0.949999988079071,
+    "noradrenalina": 0.6000000238418579,
+    "adrenalina": 0.0,
+    "gaba": 0.8739278316497803,
+    "ocitocina": 0.5619306564331055,
+    "acetilcolina": 0.7896372675895691,
+    "glutamato": 0.8705000281333923
+  },
+  "neurotransmitter_order": [
+    "dopamina",
+    "serotonina",
+    "noradrenalina",
+    "adrenalina",
+    "gaba",
+    "ocitocina",
+    "acetilcolina",
+    "glutamato"
+  ],
+  "state_range_violations": 0,
+  "finite_modulation_matrices": true,
+  "hill_midpoint_max_error": 0.0,
+  "ddi_reserved_cases": 15,
+  "benchmark_reserved_cases": 1729,
+  "benchmark_used_for_training": false,
+  "benchmark_used_for_state_updates": false,
+  "violations_preview": []
+}

@@ -1,0 +1,142 @@
+{
+  "old_sft": {
+    "label": "sft_step525",
+    "response_loss": {
+      "loss": 6.835841596126556,
+      "perplexity": 930.6112200475557,
+      "samples": 8
+    },
+    "examples": [
+      {
+        "reference": "Heloo jii",
+        "normal": {
+          "completion": "",
+          "new_tokens": 1,
+          "unique_ratio": 1.0,
+          "ended_eos": true
+        },
+        "guarded": {
+          "completion": "i i i i i i i i",
+          "new_tokens": 9,
+          "ended_eos": true,
+          "unique_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "reference": "Anyway, where are you from?",
+        "normal": {
+          "completion": "",
+          "new_tokens": 1,
+          "unique_ratio": 1.0,
+          "ended_eos": true
+        },
+        "guarded": {
+          "completion": "i i i i i i i i",
+          "new_tokens": 9,
+          "ended_eos": true,
+          "unique_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "reference": "tänker pröva den",
+        "normal": {
+          "completion": "",
+          "new_tokens": 1,
+          "unique_ratio": 1.0,
+          "ended_eos": true
+        },
+        "guarded": {
+          "completion": "i i i i i i i i",
+          "new_tokens": 9,
+          "ended_eos": true,
+          "unique_ratio": 0.2222222222222222
+        }
+      },
+      {
+        "reference": "Basically we make groups and duel other groups of duelers and the winner gets some pc",
+        "normal": {
+          "completion": "",
+          "new_tokens": 1,
+          "unique_ratio": 1.0,
+          "ended_eos": true
+        },
+        "guarded": {
+          "completion": "i i i i i i i i",
+          "new_tokens": 9,
+          "ended_eos": true,
+          "unique_ratio": 0.2222222222222222
+        }
+      }
+    ]
+  },
+  "eos_aware": {
+    "label": "eos_aware_step800",
+    "response_loss": {
+      "loss": 7.407557964324951,
+      "perplexity": 1648.3959859205877,
+      "samples": 8
+    },
+    "examples": [
+      {
+        "reference": "Heloo jii",
+        "normal": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "unique_ratio": 0.020833333333333332,
+          "ended_eos": false
+        },
+        "guarded": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "ended_eos": false,
+          "unique_ratio": 0.020833333333333332
+        }
+      },
+      {
+        "reference": "Anyway, where are you from?",
+        "normal": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "unique_ratio": 0.020833333333333332,
+          "ended_eos": false
+        },
+        "guarded": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "ended_eos": false,
+          "unique_ratio": 0.020833333333333332
+        }
+      },
+      {
+        "reference": "tänker pröva den",
+        "normal": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "unique_ratio": 0.020833333333333332,
+          "ended_eos": false
+        },
+        "guarded": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "ended_eos": false,
+          "unique_ratio": 0.020833333333333332
+        }
+      },
+      {
+        "reference": "Basically we make groups and duel other groups of duelers and the winner gets some pc",
+        "normal": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "unique_ratio": 0.020833333333333332,
+          "ended_eos": false
+        },
+        "guarded": {
+          "completion": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+          "new_tokens": 48,
+          "ended_eos": false,
+          "unique_ratio": 0.020833333333333332
+        }
+      }
+    ]
+  }
+}

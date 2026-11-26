@@ -1,0 +1,56 @@
+{
+  "dataset_name": "amostra_multidominio_cot_biocognitivo",
+  "version": "1.0.0",
+  "description": "Corpus multi-domínio comercial de alta densidade integrando Qualia ODE, neuroquímica, Chain-of-Thought introspectivo e resposta verbal.",
+  "data_file": "dados/amostra_multidominio_cot.jsonl",
+  "schema_file": "dados/schema_cot_biocognitivo.json",
+  "teacher": "Gemini-PhD-Lead-Teacher",
+  "teacher_approved": true,
+  "total_samples": 60,
+  "file_size_bytes": 271147,
+  "sha256": {
+    "dataset_jsonl": "306198fc130d460e1e351e89a405b4af5c3e1cee4ea4e6aa1e78787ba1904dfc",
+    "schema_json": "348a357fe3a2b6b49875c2ce25e80833c336436cf9fd99bde1edcc151b07b44c"
+  },
+  "domain_distributions": {
+    "analytical_reasoning": {
+      "count": 12,
+      "ratio": 0.2
+    },
+    "stem": {
+      "count": 9,
+      "ratio": 0.15
+    },
+    "code": {
+      "count": 9,
+      "ratio": 0.15
+    },
+    "general_knowledge": {
+      "count": 12,
+      "ratio": 0.2
+    },
+    "philosophy_qualia": {
+      "count": 9,
+      "ratio": 0.15
+    },
+    "empathetic_dialogue": {
+      "count": 9,
+      "ratio": 0.15
+    }
+  },
+  "token_stats": {
+    "total_tokens": 51968,
+    "avg_tokens_per_sample": 866.13,
+    "min_tokens": 556,
+    "max_tokens": 1373,
+    "vocab_size": 16384
+  },
+  "hardware_governance": {
+    "free_disk_gb": 5.7,
+    "min_disk_threshold_gb": 4.5,
+    "disk_safety_verified": true,
+    "pytorch_num_threads": 2
+  },
+  "schema_validation_passed": true,
+  "seed": 42
+}

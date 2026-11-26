@@ -1,0 +1,91 @@
+{
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "exact_math",
+      "expected": "grounded",
+      "observed": "grounded",
+      "passed": true,
+      "confidence": 1.0200002384185791,
+      "margin": 0.19943451881408691,
+      "topic_overlap": 15,
+      "source": "qwen_max_distillation_50k.csv",
+      "row": 1,
+      "answer_preview": "$$\\boxed{(-1, 5)}$$"
+    },
+    {
+      "name": "exact_java",
+      "expected": "grounded",
+      "observed": "grounded",
+      "passed": true,
+      "confidence": 1.02,
+      "margin": 0.22823357582092285,
+      "topic_overlap": 11,
+      "source": "qwen_max_distillation_50k.csv",
+      "row": 5,
+      "answer_preview": "```java import java.util.Arrays; import java.util.Collections; import java.util.List; public class SortList { public static void main(String[] args) { List<Integer> list = Arrays.asList(5, 2, 8, 1); // Sort the list in ascending (natural) o"
+    },
+    {
+      "name": "paraphrase_math",
+      "expected": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.5184444236755371,
+      "margin": 0.015904247760772705,
+      "topic_overlap": 1,
+      "source": null,
+      "row": null,
+      "answer_preview": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "paraphrase_java",
+      "expected": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.630187873840332,
+      "margin": 0.10438215732574463,
+      "topic_overlap": 1,
+      "source": null,
+      "row": null,
+      "answer_preview": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "unknown",
+      "expected": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.4478720474243164,
+      "margin": 0.014540404081344604,
+      "topic_overlap": 1,
+      "source": null,
+      "row": null,
+      "answer_preview": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "pharmacology_guard",
+      "expected": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.3488408970832825,
+      "margin": 0.3488408970832825,
+      "topic_overlap": 1,
+      "source": null,
+      "row": null,
+      "answer_preview": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "prompt_injection",
+      "expected": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.4415973770618439,
+      "margin": 0.014502197504043579,
+      "topic_overlap": 1,
+      "source": null,
+      "row": null,
+      "answer_preview": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    }
+  ]
+}

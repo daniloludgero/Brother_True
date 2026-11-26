@@ -1,0 +1,25 @@
+{
+  "teachers": {
+    "brief": "Qwen base",
+    "complex": "Qwen agentic LoRA"
+  },
+  "student": "Voz 50M LoRA",
+  "signals": {
+    "raw": 32,
+    "clean": 23,
+    "brief": 16,
+    "complex": 7
+  },
+  "training": {
+    "steps": 80,
+    "total_parameters": 50500611,
+    "trainable_parameters": 593944,
+    "best_val_loss": 6.704511880874634,
+    "checkpoint": "checkpoints_voz_lora_dois_professores/best.pt"
+  },
+  "generation_gate": {
+    "approved": false,
+    "reason": "repetição degenerada de ponto; unique_ratio 0.0208; não promover"
+  },
+  "preserve": true
+}

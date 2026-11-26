@@ -1,0 +1,90 @@
+{
+  "model": "Voz 50M chat SFT curado",
+  "response_loss": {
+    "loss": 5.776630163192749,
+    "perplexity": 322.67001098985946,
+    "samples": 8
+  },
+  "examples": [
+    {
+      "reference": "For cotton pickin",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "As she should you were over here flirting with another girl",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "Slay queen",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "i also think its funny that a diamond 3 got shit on by a gold 3 love you bro",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "holiii muy bien :3",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "Benson, anda a laburar en el parque",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "yes. I live in the main city.",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "reference": "okays :D",
+      "generated": {
+        "completion": "im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end im_end",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "ended_chat_marker": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    }
+  ]
+}

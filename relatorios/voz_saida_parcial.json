@@ -1,0 +1,54 @@
+{
+  "checkpoint_step": 150,
+  "metrics": {
+    "train_loss": 5.474188327789307,
+    "val_loss": 6.210646256804466,
+    "step": 150,
+    "total_parameters": 50500611,
+    "trainable_parameters": 16796675,
+    "dataset": "two_teacher_qualified_partial_output"
+  },
+  "examples": [
+    {
+      "complexity": "brief",
+      "teacher": "qwen_base_brief",
+      "generated": {
+        "completion": "\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "brief",
+      "teacher": "qwen_base_brief",
+      "generated": {
+        "completion": "\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "complex",
+      "teacher": "deepseek_agentic_teacher_canonical",
+      "generated": {
+        "completion": "\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "complex",
+      "teacher": "deepseek_agentic_teacher_canonical",
+      "generated": {
+        "completion": "\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    }
+  ],
+  "dataset_rows": 467
+}

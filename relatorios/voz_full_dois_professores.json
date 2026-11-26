@@ -1,0 +1,54 @@
+{
+  "checkpoint_step": 100,
+  "metrics": {
+    "train_loss": 8.293920516967773,
+    "val_loss": 8.18734247982502,
+    "step": 100,
+    "total_parameters": 50500611,
+    "trainable_parameters": 50500611,
+    "dataset": "two_teacher_qualified_full_controlled"
+  },
+  "examples": [
+    {
+      "complexity": "brief",
+      "teacher": "qwen_base_brief",
+      "generated": {
+        "completion": "the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "brief",
+      "teacher": "qwen_base_brief",
+      "generated": {
+        "completion": "the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "complex",
+      "teacher": "deepseek_agentic_teacher_canonical",
+      "generated": {
+        "completion": "the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    },
+    {
+      "complexity": "complex",
+      "teacher": "deepseek_agentic_teacher_canonical",
+      "generated": {
+        "completion": "the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 48,
+        "ended_eos": false,
+        "unique_ratio": 0.020833333333333332
+      }
+    }
+  ],
+  "dataset_rows": 467
+}

@@ -1,0 +1,41 @@
+# Python & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Local SQLite databases & heavy model checkpoints (stored in Google Drive / Hub with SHA-256 manifests)
+*.db
+*.sqlite3
+*.db-journal
+*.db-wal
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.parquet
+*.zip
+
+# Ephemeral test sandboxes, agent scratchpads, local symlinks & heavy corpora
+.agents/teamwork/
+.agents/teamwork_prev_m1_m2/
+benchmarks
+test_zero_leakage_env_*/
+checkpoints_*
+checkpoints_*/
+sandbox_eval/checkpoints/
+teachers/qwen*/
+graph_rag_rapido_v2/
+experimentos/deepseek_encoder_decoder_2026-08-27/*.jsonl
+experimentos/deepseek_encoder_decoder_2026-08-27/checkpoints/
+experimentos/industrial_readiness_2026_10_25/deliverables/*.zip
+dados_externos
+dados_externos/
+dados_modulos_novos
+dados_modulos_novos/
+dados_preparados
+dados_preparados/
+dados_professor
+dados_professor/
+.hf_cache/

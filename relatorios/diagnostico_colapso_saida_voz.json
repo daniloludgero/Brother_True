@@ -1,0 +1,28 @@
+{
+  "dataset": "467 sinais qualificados de dois professores",
+  "experiments": [
+    {
+      "name": "LoRA",
+      "checkpoint": "checkpoints_voz_lora_dois_professores_qualificado/best.pt",
+      "best_val_loss": 5.7957790940999985,
+      "generation": "aspas repetidas",
+      "unique_ratio": 0.020833333333333332
+    },
+    {
+      "name": "embeddings+lm_head",
+      "checkpoint": "checkpoints_voz_saida_parcial/best.pt",
+      "best_val_loss": 6.210646256804466,
+      "generation": "aspas separadas repetidas",
+      "unique_ratio": 0.020833333333333332
+    },
+    {
+      "name": "full_controlled",
+      "checkpoint": "checkpoints_voz_full_dois_professores/best.pt",
+      "best_val_loss": 8.18734247982502,
+      "generation": "the repetido",
+      "unique_ratio": 0.020833333333333332
+    }
+  ],
+  "active_model_changed": false,
+  "conclusion": "O gargalo não é apenas quantidade de dados ou subconjunto de pesos; é necessário revisar o caminho autoregressivo, tokenizer/targets e inicialização da cabeça de saída antes de novo treino."
+}

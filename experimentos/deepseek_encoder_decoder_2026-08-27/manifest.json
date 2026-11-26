@@ -1,0 +1,60 @@
+{
+  "experiment": "isolated_deepseek_encoder_decoder_2026-08-27",
+  "teacher": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "approved_training": {
+    "encoder_rows": 2048,
+    "decoder_rows": 4096,
+    "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_canonico.parquet",
+    "teacher_approved": true
+  },
+  "review_queue": {
+    "rows": 896,
+    "teacher_approved": false,
+    "policy": "never train until DeepSeek validates each candidate"
+  },
+  "sources": [
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\voz_natural.jsonl",
+      "role": "natural_language",
+      "selected": 128,
+      "bytes": 549573337
+    },
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\codigo_secundario.jsonl",
+      "role": "code",
+      "selected": 128,
+      "bytes": 538891974
+    },
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\pensamento_think.jsonl",
+      "role": "private_think",
+      "selected": 128,
+      "bytes": 114311254
+    },
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_preparados\\dialogos_robustos.jsonl",
+      "role": "dialogue",
+      "selected": 128,
+      "bytes": 169140127
+    },
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_preparados\\raciocinio_pensamento.jsonl",
+      "role": "reasoning",
+      "selected": 128,
+      "bytes": 112316440
+    },
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_externos\\tokenizers_english_sample.jsonl",
+      "role": "english",
+      "selected": 128,
+      "bytes": 487705421
+    },
+    {
+      "source": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_externos\\tokenizers_code_sample.jsonl",
+      "role": "code",
+      "selected": 128,
+      "bytes": 536583544
+    }
+  ],
+  "checkpoints_dir": "C:\\Users\\Samsung\\Downloads\\brothertrue\\experimentos\\deepseek_encoder_decoder_2026-08-27\\checkpoints"
+}

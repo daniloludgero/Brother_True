@@ -1,0 +1,9 @@
+{
+  "brief_candidates": 96,
+  "brief_written": 83,
+  "complex_written": 384,
+  "filtered": 13,
+  "total": 467,
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\distilacao_dois_professores_qualificada.jsonl",
+  "quality": "schema,length,boilerplate,repetition"
+}

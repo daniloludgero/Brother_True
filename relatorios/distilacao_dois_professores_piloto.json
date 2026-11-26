@@ -1,0 +1,12 @@
+{
+  "brief_requested": 16,
+  "complex_requested": 16,
+  "brief_written": 16,
+  "complex_written": 16,
+  "filtered": 0,
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\distilacao_dois_professores_piloto.jsonl",
+  "teachers": {
+    "brief": "Qwen base",
+    "complex": "C:\\Users\\Samsung\\Downloads\\brothertrue\\checkpoints_professor_agentic_qwen\\continuacao_best.pt"
+  }
+}

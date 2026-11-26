@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BrotherTrueRAGGroundedRecord",
+  "description": "Strict JSON Draft-07 schema for RAG Grounded and Refusal training records, enforcing Zero-Leakage of thought traces into grounded responses.",
+  "type": "object",
+  "required": [
+    "id",
+    "query",
+    "retrieved_context",
+    "grounded_response",
+    "thought_trace",
+    "is_grounded",
+    "abstention_flag",
+    "tutor_domain",
+    "sha256"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^rag_[a-z0-9_]+$",
+      "description": "Unique identifier for the RAG record."
+    },
+    "query": {
+      "type": "string",
+      "minLength": 5,
+      "description": "User question or inquiry requiring factual retrieval or episodic lookup."
+    },
+    "retrieved_context": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Retrieved documentation chunks or episodic memories provided to the model.",
+      "items": {
+        "type": "object",
+        "required": [
+          "chunk_id",
+          "source_doc",
+          "text",
+          "similarity_score"
+        ],
+        "properties": {
+          "chunk_id": {
+            "type": "string",
+            "description": "Identifier of the retrieved snippet."
+          },
+          "source_doc": {
+            "type": "string",
+            "description": "Source document, table, or memory key."
+          },
+          "text": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Verbatim excerpt of retrieved content."
+          },
+          "similarity_score": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Cosine similarity or relevance score."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "grounded_response": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Clean, user-facing verbal response strictly derived from context or polite refusal if absent. Zero thought tags or telemetry."
+    },
+    "thought_trace": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Decoupled internal Chain-of-Thought evaluating evidence sufficiency, detecting gaps, and determining grounding verdict."
+    },
+    "is_grounded": {
+      "type": "boolean",
+      "description": "True if the response is factually supported by retrieved_context; False if context was insufficient or negative."
+    },
+    "abstention_flag": {
+      "type": "boolean",
+      "description": "True if the model explicitly abstains from answering due to missing or tangential context; False otherwise."
+    },
+    "tutor_domain": {
+      "type": "string",
+      "enum": [
+        "biocognitive_systems",
+        "scientific_literature",
+        "computational_algorithms",
+        "autobiographical_ltp",
+        "general_epistemology"
+      ],
+      "description": "The specific pedagogical domain of the generating or supervising tutor."
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Cryptographic SHA-256 hash of normalized record content."
+    },
+    "rag_type": {
+      "type": "string",
+      "enum": [
+        "grounded_positive",
+        "adversarial_negative",
+        "partial_grounded",
+        "contradictory_context"
+      ],
+      "description": "Taxonomy of RAG interaction."
+    },
+    "grounding_verdict": {
+      "type": "string",
+      "enum": [
+        "fully_supported",
+        "insufficient_context",
+        "partially_supported",
+        "contradiction_detected"
+      ],
+      "description": "Internal diagnostic verdict reached in the thought trace."
+    },
+    "teacher_provenance": {
+      "type": "string",
+      "description": "Identifier of the supervising teacher or federation tutor."
+    },
+    "teacher_approved": {
+      "type": "boolean",
+      "description": "Whether the sample passed the Teacher Gate audit."
+    },
+    "internal_state": {
+      "type": "object",
+      "description": "Biocognitive state vector during retrieval and response synthesis.",
+      "required": [
+        "qualia_ode",
+        "neurochemistry",
+        "pensamento",
+        "palavras"
+      ],
+      "properties": {
+        "qualia_ode": {
+          "type": "object",
+          "required": ["L", "Q", "F", "E", "collapsed"],
+          "properties": {
+            "L": { "type": "number" },
+            "Q": { "type": "number" },
+            "F": { "type": "number" },
+            "E": { "type": "number" },
+            "collapsed": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "neurochemistry": {
+          "type": "object",
+          "required": [
+            "dopamina",
+            "serotonina",
+            "noradrenalina",
+            "adrenalina",
+            "gaba",
+            "ocitocina",
+            "acetilcolina",
+            "glutamato"
+          ],
+          "properties": {
+            "dopamina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "serotonina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "noradrenalina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "adrenalina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "gaba": { "type": "number", "minimum": 0, "maximum": 1 },
+            "ocitocina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "acetilcolina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "glutamato": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "additionalProperties": false
+        },
+        "pensamento": {
+          "type": "object",
+          "required": ["predicted_next_state", "loss_p"],
+          "properties": {
+            "predicted_next_state": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "loss_p": { "type": "number" }
+          },
+          "additionalProperties": false
+        },
+        "palavras": {
+          "type": "object",
+          "required": ["kl", "surprise"],
+          "properties": {
+            "kl": { "type": "number" },
+            "surprise": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

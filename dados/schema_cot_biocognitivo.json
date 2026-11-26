@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BrotherTrueCoTBiocognitiveRecord",
+  "description": "Canonical schema for multi-domain Chain-of-Thought biocognitive records integrating Qualia ODE, neurochemistry, introspective thought, and verbal response.",
+  "type": "object",
+  "required": [
+    "id",
+    "domain",
+    "source",
+    "teacher_approved",
+    "sha256",
+    "prompt",
+    "internal_state",
+    "thought_trace",
+    "response_text",
+    "formatted_stream"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the sample record."
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "analytical_reasoning",
+        "stem",
+        "code",
+        "general_knowledge",
+        "philosophy_qualia",
+        "empathetic_dialogue"
+      ],
+      "description": "Cognitive domain classification conforming to the 6-domain commercial curriculum."
+    },
+    "source": {
+      "type": "string",
+      "description": "Origin of raw data or teacher provenance."
+    },
+    "teacher_approved": {
+      "type": "boolean",
+      "description": "Whether the sample has been audited and approved through the Teacher Gate."
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Cryptographic SHA-256 hash of the normalized record content."
+    },
+    "prompt": {
+      "type": "string",
+      "description": "User instruction or conversational input."
+    },
+    "internal_state": {
+      "type": "object",
+      "description": "Biocognitive state vector integrating continuous dynamics and introspection.",
+      "required": [
+        "qualia_ode",
+        "neurochemistry",
+        "pensamento",
+        "palavras"
+      ],
+      "properties": {
+        "qualia_ode": {
+          "type": "object",
+          "required": ["L", "Q", "F", "E", "collapsed"],
+          "properties": {
+            "L": { "type": "number", "description": "Luminosity / order parameter." },
+            "Q": { "type": "number", "description": "Qualia / subjective complexity parameter." },
+            "F": { "type": "number", "description": "Cognitive fatigue." },
+            "E": { "type": "number", "description": "Total qualia energy: 0.5*L + 0.5*Q." },
+            "collapsed": { "type": "boolean", "description": "Whether Lyapunov energy collapse threshold was triggered." }
+          },
+          "additionalProperties": false
+        },
+        "neurochemistry": {
+          "type": "object",
+          "required": [
+            "dopamina",
+            "serotonina",
+            "noradrenalina",
+            "adrenalina",
+            "gaba",
+            "ocitocina",
+            "acetilcolina",
+            "glutamato"
+          ],
+          "properties": {
+            "dopamina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "serotonina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "noradrenalina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "adrenalina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "gaba": { "type": "number", "minimum": 0, "maximum": 1 },
+            "ocitocina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "acetilcolina": { "type": "number", "minimum": 0, "maximum": 1 },
+            "glutamato": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "additionalProperties": false
+        },
+        "pensamento": {
+          "type": "object",
+          "required": ["predicted_next_state", "loss_p"],
+          "properties": {
+            "predicted_next_state": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 3,
+              "maxItems": 3,
+              "description": "Predicted [hat_L, hat_Q, hat_F] trajectory."
+            },
+            "loss_p": {
+              "type": "number",
+              "description": "Introspective prediction loss (MSE)."
+            }
+          },
+          "additionalProperties": false
+        },
+        "palavras": {
+          "type": "object",
+          "required": ["kl", "surprise"],
+          "properties": {
+            "kl": { "type": "number", "description": "KL divergence against semantic prior." },
+            "surprise": { "type": "boolean", "description": "Epistemic surprise flag (kl > threshold)." }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "thought_trace": {
+      "type": "string",
+      "description": "Chain-of-thought introspective reasoning trace reflecting systemic analysis."
+    },
+    "response_text": {
+      "type": "string",
+      "description": "Final verbal response delivered to the user."
+    },
+    "formatted_stream": {
+      "type": "string",
+      "description": "ChatML token stream with affect and thought tags."
+    }
+  },
+  "additionalProperties": false
+}

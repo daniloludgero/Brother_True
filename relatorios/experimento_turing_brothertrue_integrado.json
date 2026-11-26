@@ -1,0 +1,118 @@
+{
+  "protocol": "VT-1 machine language",
+  "test": "integrated BrotherTrue state-to-voice",
+  "model": "C:\\Users\\Samsung\\Downloads\\brothertrue\\checkpoints_voz_50m_piloto\\best.pt",
+  "in_test_adapter": "clone MiniLM inference tensor",
+  "modules_exercised": [
+    "EncoderSemantico",
+    "ProjetorSemantico",
+    "QualiaODE",
+    "NeuroTransmissor",
+    "Pensamento",
+    "Palavras",
+    "Memory",
+    "LongTermMemory",
+    "Voz 50M"
+  ],
+  "sequence": [
+    {
+      "turns": 1,
+      "state": {
+        "L": 10.513519287109375,
+        "Q": 10.813970565795898,
+        "F": 2.8975534439086914,
+        "E": 10.663744926452637,
+        "loss_pensamento": 0.0,
+        "surprise": true
+      },
+      "voice_output": "<| on august real <| knowledge change i . the chthe",
+      "score": {
+        "expected_tokens": {
+          "ACK 01": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 02": false
+        },
+        "matched": 0,
+        "output_tokens": 11,
+        "unique_ratio_words": 0.9090909090909091
+      }
+    },
+    {
+      "turns": 2,
+      "state": {
+        "L": 287.5058288574219,
+        "Q": 207.11410522460938,
+        "F": 83.66947937011719,
+        "E": 247.30996704101562,
+        "loss_pensamento": 44070.32421875,
+        "surprise": true
+      },
+      "voice_output": "want in relcom, |> is |> are frunderare",
+      "score": {
+        "expected_tokens": {
+          "ACK 02": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 03": false
+        },
+        "matched": 0,
+        "output_tokens": 8,
+        "unique_ratio_words": 0.875
+      }
+    },
+    {
+      "turns": 3,
+      "state": {
+        "L": 4312.5439453125,
+        "Q": 3077.974853515625,
+        "F": 1329.162353515625,
+        "E": 3695.25927734375,
+        "loss_pensamento": 9771636.0,
+        "surprise": true
+      },
+      "voice_output": "their the marcontrol y oud seems that we during what by",
+      "score": {
+        "expected_tokens": {
+          "ACK 03": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 04": false
+        },
+        "matched": 0,
+        "output_tokens": 11,
+        "unique_ratio_words": 1.0
+      }
+    },
+    {
+      "turns": 4,
+      "state": {
+        "L": 61722.00390625,
+        "Q": 44099.11328125,
+        "F": 19284.404296875,
+        "E": 52910.55859375,
+        "loss_pensamento": 1970403712.0,
+        "surprise": true
+      },
+      "voice_output": "im_start such to of don in of <| doesn l infection ars",
+      "score": {
+        "expected_tokens": {
+          "ACK 04": false,
+          "STATE": false,
+          "READY": false,
+          "NEXT 05": false
+        },
+        "matched": 0,
+        "output_tokens": 12,
+        "unique_ratio_words": 0.9166666666666666
+      }
+    }
+  ],
+  "summary": {
+    "turns_tested": 4,
+    "max_matched": 0,
+    "passed_any": false,
+    "state_processed_all": true
+  },
+  "caveat": "GraphRAG não participa do método BrotherTrue.falar atual; foi avaliado separadamente."
+}

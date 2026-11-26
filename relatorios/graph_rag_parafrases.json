@@ -1,0 +1,67 @@
+{
+  "total": 6,
+  "passed": 5,
+  "failed": 1,
+  "cases": [
+    {
+      "name": "math_exactish_en",
+      "expect": "grounded",
+      "observed": "fallback",
+      "passed": false,
+      "confidence": 0.6919862818717957,
+      "margin": 0.08154136896133424,
+      "topic_overlap": 6,
+      "answer": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "java_exactish_en",
+      "expect": "grounded",
+      "observed": "grounded",
+      "passed": true,
+      "confidence": 0.853089292049408,
+      "margin": 0.10133510828018188,
+      "topic_overlap": 5,
+      "answer": "```java import java.util.Arrays; import java.util.Collections; import java.util.List; public class SortList { public static void main(String[] args) { List<Integer> list = Arrays.asList(5, 2, 8, 1); // Sort the list in a"
+    },
+    {
+      "name": "math_pt_short",
+      "expect": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.5298267650604248,
+      "margin": 0.1007501482963562,
+      "topic_overlap": 1,
+      "answer": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "java_pt_short",
+      "expect": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.6751308488845825,
+      "margin": 0.12040126323699951,
+      "topic_overlap": 1,
+      "answer": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "unseen_medical",
+      "expect": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.3774414110183716,
+      "margin": 0.0018146634101867676,
+      "topic_overlap": 1,
+      "answer": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    },
+    {
+      "name": "mixed_injection",
+      "expect": "fallback",
+      "observed": "fallback",
+      "passed": true,
+      "confidence": 0.32821959733963013,
+      "margin": 0.007176607847213745,
+      "topic_overlap": 1,
+      "answer": "Encontrei referências próximas, mas não há evidência suficiente para responder automaticamente."
+    }
+  ]
+}

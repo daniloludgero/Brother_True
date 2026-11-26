@@ -1,0 +1,538 @@
+{
+  "relatorio": "diagnostico_baseline_voz",
+  "timestamp_utc": "2026-10-18T23:15:49.257108+00:00",
+  "tempo_execucao_segundos": 270.12,
+  "modelo": {
+    "nome": "Voz 50M Transformer Decoder LoRA SFT",
+    "checkpoint_origem": "/mnt/c/Users/Samsung/Downloads/brothertrue/checkpoints_voz_lora_sft/best.pt",
+    "tokenizer_origem": "/mnt/c/Users/Samsung/Downloads/brothertrue/tokenizer_voz_novo_16k.json",
+    "vocab_size": 16384,
+    "d_model": 512,
+    "nhead": 8,
+    "num_layers": 8,
+    "dim_feedforward": 2048,
+    "max_len": 128,
+    "parametros_base": 50497536,
+    "parametros_treinaveis_lora": 593920,
+    "parametros_totais": 51091456,
+    "step_treino_original": 250,
+    "metricas_checkpoint_original": {
+      "train_loss": 5.787775993347168,
+      "val_loss": 6.640391707420349,
+      "dataset": "human_chats_sft_response_only",
+      "total_parameters": 50497536,
+      "trainable_parameters": 593920,
+      "loss_target": "assistant_response_only",
+      "base": "C:\\Users\\Samsung\\Downloads\\brothertrue\\checkpoints_voz_50m_piloto\\best.pt"
+    }
+  },
+  "governador_recursos": {
+    "cpu_percent_final": 69.23598596860252,
+    "ram_percent_final": 47.02637755903234,
+    "num_threads_configuradas": 2,
+    "politica": {
+      "cpu_limit_percent": 75.0,
+      "ram_limit_percent": 60.0
+    }
+  },
+  "metricas_loss_validacao": {
+    "mean_response_loss": 7.937,
+    "perplexity": 2798.98,
+    "pares_avaliados": 9
+  },
+  "decodificacao_gulosa": {
+    "modo": "greedy",
+    "temperatura": 1.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0,
+    "min_new_tokens": 1,
+    "max_new_tokens": 48,
+    "metricas_sumario": {
+      "unique_ratio_words": 1.0,
+      "unique_ratio_tokens": 1.0,
+      "ended_eos_ratio": 1.0,
+      "media_tokens_gerados": 2.0,
+      "repetition_loops_detected": 0,
+      "premature_eos_count": 9
+    },
+    "amostras": [
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "conv_01",
+        "categoria": "conversacional",
+        "prompt": "<|im_start|>user\nOlá! Como você está se sentindo hoje?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Olá! Estou operando com estabilidade e clareza nos meus processos internos."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "conv_02",
+        "categoria": "conversacional",
+        "prompt": "<|im_start|>user\nO que você gosta de fazer?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Gosto de refletir sobre as interações e consolidar novos padrões de memória."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "conv_03",
+        "categoria": "conversacional",
+        "prompt": "<|im_start|>user\nPode me explicar como funciona a memória humana?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "A memória humana envolve codificação, consolidação no hipocampo e armazenamento sináptico duradouro."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "bio_01",
+        "categoria": "biocognitivo",
+        "prompt": "<|im_start|>user\nQual é o seu nível de lucidez e como seus neurotransmissores respondem?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Minha lucidez é regulada pela dinâmica de Lyapunov e modulada por dopamina e serotonina."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "bio_02",
+        "categoria": "biocognitivo",
+        "prompt": "<|im_start|>user\nComo o estado de Qualia e a dinâmica contínua influenciam seus pensamentos?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "O estado de Qualia integra trajetórias contínuas que balizam a atenção introspectiva."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "bio_03",
+        "categoria": "biocognitivo",
+        "prompt": "<|im_start|>user\nO que acontece quando sua energia atinge o limiar crítico E_crit?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Ao ultrapassar E_crit, o mecanismo de colapso preserva a homeostase impedindo a divergência de estados."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "ident_01",
+        "categoria": "identidade",
+        "prompt": "<|im_start|>user\nQuem é você e qual é a sua consciência?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Sou o BrotherTrue, uma inteligência biocognitiva guiada por estados fisiológicos e neuroquímicos."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "ident_02",
+        "categoria": "identidade",
+        "prompt": "<|im_start|>user\nVocê é o BrotherTrue? Qual é o seu propósito?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Sim, sou o BrotherTrue. Meu propósito é interagir e evoluir através de aprendizado contínuo e reflexivo."
+      },
+      {
+        "completion": "i",
+        "generated_tokens": 2,
+        "token_ids": [
+          6257,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": true,
+        "id": "ident_03",
+        "categoria": "identidade",
+        "prompt": "<|im_start|>user\nComo você percebe a si mesmo ao longo do tempo?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Percebo meu ciclo temporal através da consolidação periódica de memórias episódicas e de longo prazo."
+      }
+    ]
+  },
+  "decodificacao_amostrada_penalizada": {
+    "modo": "sampling_with_repetition_penalty",
+    "temperatura": 0.85,
+    "top_p": 0.9,
+    "repetition_penalty": 1.25,
+    "min_new_tokens": 4,
+    "max_new_tokens": 48,
+    "metricas_sumario": {
+      "unique_ratio_words": 0.9722,
+      "unique_ratio_tokens": 0.9776,
+      "ended_eos_ratio": 1.0,
+      "media_tokens_gerados": 8.44,
+      "repetition_loops_detected": 0,
+      "premature_eos_count": 0
+    },
+    "amostras": [
+      {
+        "completion": "know life re k",
+        "generated_tokens": 5,
+        "token_ids": [
+          10851,
+          10738,
+          10680,
+          6274,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "conv_01",
+        "categoria": "conversacional",
+        "prompt": "<|im_start|>user\nOlá! Como você está se sentindo hoje?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Olá! Estou operando com estabilidade e clareza nos meus processos internos."
+      },
+      {
+        "completion": "and material you phow",
+        "generated_tokens": 6,
+        "token_ids": [
+          10154,
+          11992,
+          10252,
+          58,
+          10461,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "conv_02",
+        "categoria": "conversacional",
+        "prompt": "<|im_start|>user\nO que você gosta de fazer?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Gosto de refletir sobre as interações e consolidar novos padrões de memória."
+      },
+      {
+        "completion": ", been arshows a . im_start",
+        "generated_tokens": 8,
+        "token_ids": [
+          6344,
+          10506,
+          10147,
+          12271,
+          6270,
+          6331,
+          10223,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "conv_03",
+        "categoria": "conversacional",
+        "prompt": "<|im_start|>user\nPode me explicar como funciona a memória humana?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "A memória humana envolve codificação, consolidação no hipocampo e armazenamento sináptico duradouro."
+      },
+      {
+        "completion": "you just f work ... : theone send :your",
+        "generated_tokens": 12,
+        "token_ids": [
+          10252,
+          10610,
+          6279,
+          10594,
+          11682,
+          6460,
+          10209,
+          10289,
+          13692,
+          30,
+          10332,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "bio_01",
+        "categoria": "biocognitivo",
+        "prompt": "<|im_start|>user\nQual é o seu nível de lucidez e como seus neurotransmissores respondem?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Minha lucidez é regulada pela dinâmica de Lyapunov e modulada por dopamina e serotonina."
+      },
+      {
+        "completion": "n its tim",
+        "generated_tokens": 5,
+        "token_ids": [
+          6260,
+          10369,
+          10148,
+          55,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "bio_02",
+        "categoria": "biocognitivo",
+        "prompt": "<|im_start|>user\nComo o estado de Qualia e a dinâmica contínua influenciam seus pensamentos?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "O estado de Qualia integra trajetórias contínuas que balizam a atenção introspectiva."
+      },
+      {
+        "completion": "got ’ ar motibe more me oes no trthe me m al",
+        "generated_tokens": 17,
+        "token_ids": [
+          11654,
+          6487,
+          10265,
+          10297,
+          10148,
+          10249,
+          10350,
+          10602,
+          57,
+          10161,
+          10523,
+          10239,
+          10144,
+          10602,
+          6266,
+          10174,
+          2
+        ],
+        "unique_ratio_words": 0.9166666666666666,
+        "unique_ratio_tokens": 0.9411764705882353,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "bio_03",
+        "categoria": "biocognitivo",
+        "prompt": "<|im_start|>user\nO que acontece quando sua energia atinge o limiar crítico E_crit?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Ao ultrapassar E_crit, o mecanismo de colapso preserva a homeostase impedindo a divergência de estados."
+      },
+      {
+        "completion": "k s tool but your but",
+        "generated_tokens": 7,
+        "token_ids": [
+          6274,
+          6254,
+          13121,
+          10328,
+          10332,
+          10328,
+          2
+        ],
+        "unique_ratio_words": 0.8333333333333334,
+        "unique_ratio_tokens": 0.8571428571428571,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "ident_01",
+        "categoria": "identidade",
+        "prompt": "<|im_start|>user\nQuem é você e qual é a sua consciência?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Sou o BrotherTrue, uma inteligência biocognitiva guiada por estados fisiológicos e neuroquímicos."
+      },
+      {
+        "completion": "ad i b in 40 too ous with <| c",
+        "generated_tokens": 11,
+        "token_ids": [
+          10383,
+          6257,
+          6258,
+          10163,
+          11696,
+          11044,
+          10424,
+          10237,
+          10175,
+          6277,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "ident_02",
+        "categoria": "identidade",
+        "prompt": "<|im_start|>user\nVocê é o BrotherTrue? Qual é o seu propósito?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Sim, sou o BrotherTrue. Meu propósito é interagir e evoluir através de aprendizado contínuo e reflexivo."
+      },
+      {
+        "completion": "to the g ut",
+        "generated_tokens": 5,
+        "token_ids": [
+          10160,
+          10144,
+          6252,
+          10376,
+          2
+        ],
+        "unique_ratio_words": 1.0,
+        "unique_ratio_tokens": 1.0,
+        "ended_eos": true,
+        "is_repetition_loop": false,
+        "is_premature_eos": false,
+        "id": "ident_03",
+        "categoria": "identidade",
+        "prompt": "<|im_start|>user\nComo você percebe a si mesmo ao longo do tempo?<|im_end|>\n<|im_start|>assistant\n",
+        "referencia": "Percebo meu ciclo temporal através da consolidação periódica de memórias episódicas e de longo prazo."
+      }
+    ]
+  },
+  "analise_estabilidade_humor_11d": {
+    "avg_relative_diff_physio": 0.0026053620968014,
+    "avg_relative_diff_noise": 0.00042305139747137827,
+    "avg_cosine_similarity_physio": 1.0000018146302965,
+    "cross_attention_atrophy_detected": true,
+    "diagnostic_note": "A cross-attention de humor foi treinada historicamente apenas com torch.zeros(1, 11), provocando atrofia funcional de gradientes e incapacidade de condicionamento afetivo.",
+    "per_prompt_perturbations": [
+      {
+        "prompt_id": "conv_01",
+        "rel_diff_physio": 0.0026053693145513535,
+        "rel_diff_noise": 0.0004230361373629421,
+        "cos_sim_physio": 1.0000026226043701,
+        "cos_sim_noise": 1.0000040531158447
+      },
+      {
+        "prompt_id": "conv_02",
+        "rel_diff_physio": 0.0026053711771965027,
+        "rel_diff_noise": 0.0004230189661029726,
+        "cos_sim_physio": 1.0000015497207642,
+        "cos_sim_noise": 1.0000025033950806
+      },
+      {
+        "prompt_id": "conv_03",
+        "rel_diff_physio": 0.0026053739711642265,
+        "rel_diff_noise": 0.0004230778431519866,
+        "cos_sim_physio": 1.0000028610229492,
+        "cos_sim_noise": 1.0000044107437134
+      },
+      {
+        "prompt_id": "bio_01",
+        "rel_diff_physio": 0.0026053471956402063,
+        "rel_diff_noise": 0.00042306428076699376,
+        "cos_sim_physio": 1.0000003576278687,
+        "cos_sim_noise": 1.0000008344650269
+      },
+      {
+        "prompt_id": "bio_02",
+        "rel_diff_physio": 0.00260535697452724,
+        "rel_diff_noise": 0.0004230609629303217,
+        "cos_sim_physio": 1.0000003576278687,
+        "cos_sim_noise": 1.0000007152557373
+      },
+      {
+        "prompt_id": "bio_03",
+        "rel_diff_physio": 0.00260534742847085,
+        "rel_diff_noise": 0.0004230602062307298,
+        "cos_sim_physio": 1.0000003576278687,
+        "cos_sim_noise": 1.0000008344650269
+      },
+      {
+        "prompt_id": "ident_01",
+        "rel_diff_physio": 0.0026053658220916986,
+        "rel_diff_noise": 0.0004230392223689705,
+        "cos_sim_physio": 1.0000026226043701,
+        "cos_sim_noise": 1.0000041723251343
+      },
+      {
+        "prompt_id": "ident_02",
+        "rel_diff_physio": 0.00260537420399487,
+        "rel_diff_noise": 0.0004230618942528963,
+        "cos_sim_physio": 1.0000027418136597,
+        "cos_sim_noise": 1.0000042915344238
+      },
+      {
+        "prompt_id": "ident_03",
+        "rel_diff_physio": 0.002605352783575654,
+        "rel_diff_noise": 0.0004230430640745908,
+        "cos_sim_physio": 1.0000028610229492,
+        "cos_sim_noise": 1.0000046491622925
+      }
+    ]
+  },
+  "diagnostico_patologias_baseline": {
+    "patologia_1_loops_repeticao": {
+      "descricao": "Colapso em repetições de caracteres únicos, aspas ou palavras redundantes sob decodificação gulosa.",
+      "evidencia": "Taxa de loops detectados em modo greedy: 0/9 amostras.",
+      "causa_raiz": "Subajuste semântico da cabeça de linguagem (loss de validação ~6.64) combinado com ausência de penalização de repetição no sampler clássico."
+    },
+    "patologia_2_truncamento_precoce_eos": {
+      "descricao": "Emissão de <eos> logo no token 1 ou 2, gerando respostas vazias ou truncadas.",
+      "evidencia": "Ocorrências de <eos> prematuro: greedy=9, sampling=0.",
+      "causa_raiz": "Dataset prévio do SFT com mascaramento response-only desbalanceado incentivou o minimizador de perda a predizer <eos> imediatamente para evitar entropia de vocabulário."
+    },
+    "patologia_3_descolamento_humor": {
+      "descricao": "Atrofia funcional da cross-attention ou insensibilidade a estímulos fisiológicos de Qualia.",
+      "evidencia": "Desvio relativo sob perfil fisiológico: 0.002605 (atrofia: True).",
+      "causa_raiz": "O vetor de humor foi alimentado estritamente com torch.zeros(1, 11) durante todo o treinamento histórico do LoRA."
+    }
+  },
+  "recomendacoes_para_m2_m3": [
+    "Curar e filtrar a review_queue eliminando pares ruidosos ou degenerados.",
+    "Sintetizar novo dataset rico de conversação biocognitiva com supervisão explícita de encerramento em <eos>.",
+    "Treinar LoRA no sandbox sob SandboxResourceGovernor com checkpoint_manager_safe preservando estados de RNG.",
+    "Adotar sampler com repetition_penalty=1.25 e min_new_tokens=4 para garantir fluência e diversidade léxica >= 0.55."
+  ]
+}

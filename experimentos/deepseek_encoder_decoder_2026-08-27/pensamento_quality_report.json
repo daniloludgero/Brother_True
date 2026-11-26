@@ -1,0 +1,15 @@
+{
+  "think_rows": 36941,
+  "reasoning_rows": 36941,
+  "paired_rows": 36941,
+  "selected_rows": 4096,
+  "quality_bands_all_pairs": {
+    "medium": 30122,
+    "high": 1846,
+    "low": 4973
+  },
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\experimentos\\deepseek_encoder_decoder_2026-08-27\\pensamento_deepseek_review_queue.jsonl",
+  "teacher": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "teacher_approval_required": true,
+  "training_status": "blocked_until_teacher_approval"
+}

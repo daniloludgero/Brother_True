@@ -1,0 +1,153 @@
+{
+  "evaluation": "corrected frozen Qwen gate",
+  "truncation": "left_preserving_assistant_marker",
+  "adapter": "C:\\Users\\Samsung\\Downloads\\brothertrue\\checkpoints_professor_agentic_qwen_schema\\continuacao_best.pt",
+  "parquet": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_professor\\deepseek_v4_flash_schema_completo.parquet",
+  "reserved_skip": 256,
+  "metrics": {
+    "samples": 4,
+    "loss": 0.9263816997408867,
+    "perplexity": 2.5253551334311153,
+    "final_answer_present_rate": 0.75,
+    "tool_schema_present_rate": 0.75,
+    "tool_name_overlap_rate": 0.75,
+    "examples": [
+      {
+        "kind": "success",
+        "reference": {
+          "final_answer": "I'll fetch details for both mlem images. Since these are independent requests, I'll make both calls in parallel.",
+          "tool_calls": [
+            {
+              "name": "mlem_id",
+              "arguments": {
+                "mlemid": 101
+              }
+            },
+            {
+              "name": "mlem_id",
+              "arguments": {
+                "mlemid": 202
+              }
+            }
+          ]
+        },
+        "generated": "{\"final_answer\":\"I'll use the `mlem_id` function to get the image for the 101 and 202 renderings.\",\"tool_calls\":[{\"name\":\"mlem_id\",\"arguments\":{\"mlemid\":101}},\"tool_calls\":[{\"name\":\"mlem_id\",\"arguments\":{\"mlemid\":202}}]}",
+        "normalized": {
+          "final_answer": "",
+          "tool_calls": [
+            {
+              "name": "mlem_id",
+              "arguments": {
+                "mlemid": 101
+              }
+            },
+            {
+              "name": "mlem_id",
+              "arguments": {
+                "mlemid": 202
+              }
+            }
+          ]
+        }
+      },
+      {
+        "kind": "success",
+        "reference": {
+          "final_answer": "I'll make two independent tool calls: one for the ski weather forecast in Chamonix and one for wind speed in Paris.",
+          "tool_calls": [
+            {
+              "name": "ski_weather_api",
+              "arguments": {
+                "lang": "en",
+                "num_of_days": 2,
+                "q": "Chamonix, France"
+              }
+            },
+            {
+              "name": "get_wind_speed",
+              "arguments": {
+                "city": "Paris"
+              }
+            }
+          ]
+        },
+        "generated": "{\"final_answer\":\"I'll use the `get_weather_forecast` function with the specified parameters.\",\"tool_calls\":[{\"name\":\"get_weather_forecast\",\"arguments\":{\"q\":\"New York\"}},{\"name\":\"get_wind_speed\",\"arguments\":{\"city\":\"New York\"}}]}",
+        "normalized": {
+          "final_answer": "I'll use the `get_weather_forecast` function with the specified parameters.",
+          "tool_calls": [
+            {
+              "name": "get_weather_forecast",
+              "arguments": {
+                "q": "New York"
+              }
+            },
+            {
+              "name": "get_wind_speed",
+              "arguments": {
+                "city": "New York"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "kind": "success",
+        "reference": {
+          "final_answer": "I'll make both independent tool calls in parallel since they don't depend on each other.",
+          "tool_calls": [
+            {
+              "name": "merge_dictionaries",
+              "arguments": {
+                "dict1": {
+                  "x": 10,
+                  "y": 20
+                },
+                "dict2": {
+                  "y": 30,
+                  "z": 40
+                }
+              }
+            },
+            {
+              "name": "reverse_string",
+              "arguments": {
+                "text": "Data is powerful"
+              }
+            }
+          ]
+        },
+        "generated": "{\"final_answer\":\"I'll use the `reverse_string` function to reverse each string in the list.\",\"tool_calls\":[{\"arguments\":{\"text\":\"hello world\",\"tool_name\":\"reverse_string\"},{\"arguments\":{\"text\":\"python programming\",\"tool_name\":\"reverse_string\"}}]}",
+        "normalized": {
+          "final_answer": "{\"final_answer\":\"I'll use the `reverse_string` function to reverse each string in the list.\",\"tool_calls\":[{\"arguments\":{\"text\":\"hello world\",\"tool_name\":\"reverse_string\"},{\"arguments\":{\"text\":\"python programming\",\"tool_name\":\"reverse_string\"}}]}",
+          "tool_calls": []
+        }
+      },
+      {
+        "kind": "success",
+        "reference": {
+          "final_answer": "I'll query the WHOIS details for the domain 'wikipedia.org' using the whois tool.",
+          "tool_calls": [
+            {
+              "name": "whois",
+              "arguments": {
+                "q": "wikipedia.org"
+              }
+            }
+          ]
+        },
+        "generated": "{\"final_answer\":\"I'll use `whois` to get the WHOIS record for the domain.\",\"tool_calls\":[{\"name\":\"whois\",\"arguments\":{\"q\":\"google.com\"}}]}",
+        "normalized": {
+          "final_answer": "I'll use `whois` to get the WHOIS record for the domain.",
+          "tool_calls": [
+            {
+              "name": "whois",
+              "arguments": {
+                "q": "google.com"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

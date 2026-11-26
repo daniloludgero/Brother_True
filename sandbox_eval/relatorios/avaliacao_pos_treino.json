@@ -1,0 +1,133 @@
+{
+  "experiment": "sandbox_eval_gemini_teacher_post_training",
+  "timestamp": "2026-10-18T23:53:24.679278+00:00",
+  "checkpoint": "/mnt/c/Users/Samsung/Downloads/brothertrue/sandbox_eval/checkpoints/best.pt",
+  "teacher": "Gemini-Flash-High-PhD-Auditor",
+  "metrics": {
+    "unique_ratio_words": 0.9255,
+    "ended_eos_ratio": 1.0,
+    "repetition_loops_detected": 0,
+    "premature_eos_count": 0,
+    "avg_generated_tokens": 28.67,
+    "val_loss": 6.3690550327301025
+  },
+  "comparative_summary": {
+    "baseline_val_loss": 7.937,
+    "post_training_val_loss": 6.3690550327301025,
+    "baseline_greedy_premature_eos": 9,
+    "post_training_greedy_premature_eos": 0,
+    "baseline_unique_ratio": 0.9722,
+    "post_training_unique_ratio": 0.9255,
+    "repetition_loops_eliminated": true
+  },
+  "samples": [
+    {
+      "text": "sde a dde i monde de bras a do os div down a to",
+      "token_count": 19,
+      "unique_ratio_words": 0.8571428571428571,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "conv_01",
+      "categoria": "conversacional",
+      "prompt": "<|im_start|>user\nOlá! Como você está se sentindo hoje?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Olá! Estou operando com estabilidade e clareza nos meus processos internos."
+    },
+    {
+      "text": "e oridiagna a do . on or amquadto amhere dza apre",
+      "token_count": 20,
+      "unique_ratio_words": 1.0,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "conv_02",
+      "categoria": "conversacional",
+      "prompt": "<|im_start|>user\nO que você gosta de fazer?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Gosto de refletir sobre as interações e consolidar novos padrões de memória."
+    },
+    {
+      "text": "oo um temcointerelvnew que mfinas ina do utanrecigno siabparis a as os des",
+      "token_count": 30,
+      "unique_ratio_words": 1.0,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "conv_03",
+      "categoria": "conversacional",
+      "prompt": "<|im_start|>user\nPode me explicar como funciona a memória humana?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "A memória humana envolve codificação, consolidação no hipocampo e armazenamento sináptico duradouro."
+    },
+    {
+      "text": "a com professor comv oreno mental ade sispranadpridiyou s def",
+      "token_count": 20,
+      "unique_ratio_words": 1.0,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "bio_01",
+      "categoria": "biocognitivo",
+      "prompt": "<|im_start|>user\nQual é o seu nível de lucidez e como seus neurotransmissores respondem?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Minha lucidez é regulada pela dinâmica de Lyapunov e modulada por dopamina e serotonina."
+    },
+    {
+      "text": "e got cono imo de amviils has dsin. ramo os o abput a nulnamed tea lhand fos os wo equcoma ses seentde ater colo andil",
+      "token_count": 48,
+      "unique_ratio_words": 0.96,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "bio_02",
+      "categoria": "biocognitivo",
+      "prompt": "<|im_start|>user\nComo o estado de Qualia e a dinâmica contínua influenciam seus pensamentos?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "O estado de Qualia integra trajetórias contínuas que balizam a atenção introspectiva."
+    },
+    {
+      "text": ". diaccolyou paros o os com at. time arago a çtime penapo sies amano a hai quamesto like a za in toit de es estos okanfadiade",
+      "token_count": 48,
+      "unique_ratio_words": 0.92,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "bio_03",
+      "categoria": "biocognitivo",
+      "prompt": "<|im_start|>user\nO que acontece quando sua energia atinge o limiar crítico E_crit?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Ao ultrapassar E_crit, o mecanismo de colapso preserva a homeostase impedindo a divergência de estados."
+    },
+    {
+      "text": "defmy da noa . os de as umestabcer, a tonato . o . e ar e os za to ' e , eno dman",
+      "token_count": 34,
+      "unique_ratio_words": 0.8421052631578947,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "ident_01",
+      "categoria": "identidade",
+      "prompt": "<|im_start|>user\nQuem é você e qual é a sua consciência?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Sou o BrotherTrue, uma inteligência biocognitiva guiada por estados fisiológicos e neuroquímicos."
+    },
+    {
+      "text": "atj. ago a1 u at ents tede ds to ade a abe roamamplo i o teçque ricit juqu",
+      "token_count": 33,
+      "unique_ratio_words": 1.0,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "ident_02",
+      "categoria": "identidade",
+      "prompt": "<|im_start|>user\nVocê é o BrotherTrue? Qual é o seu propósito?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Sim, sou o BrotherTrue. Meu propósito é interagir e evoluir através de aprendizado contínuo e reflexivo."
+    },
+    {
+      "text": "a inoade a o",
+      "token_count": 6,
+      "unique_ratio_words": 0.75,
+      "ended_eos": true,
+      "is_premature_eos": false,
+      "is_repetition_loop": false,
+      "id": "ident_03",
+      "categoria": "identidade",
+      "prompt": "<|im_start|>user\nComo você percebe a si mesmo ao longo do tempo?<|im_end|>\n<|im_start|>assistant\n",
+      "referencia": "Percebo meu ciclo temporal através da consolidação periódica de memórias episódicas e de longo prazo."
+    }
+  ]
+}

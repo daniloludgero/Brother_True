@@ -1,0 +1,26 @@
+{
+  "pipeline_tested": [
+    "query",
+    "GraphRAG lexical+MiniLM",
+    "topic/candidate expansion",
+    "confidence and margin gate",
+    "trusted context injection",
+    "Qwen final generation",
+    "fallback/provenance evaluation"
+  ],
+  "direct_graph_rag": {
+    "passed": 7,
+    "total": 7,
+    "exact_cases_correct": 2,
+    "fallback_cases_correct": 5
+  },
+  "contextual_generation": {
+    "exact_fragment_baseline": 1,
+    "exact_fragment_rag": 0,
+    "fallback_gate_correct": 5,
+    "fallback_output_abstained": 1
+  },
+  "conclusion": "GraphRAG melhora recuperação, proveniência e abstinência; neste Qwen pequeno, injetar contexto e pedir reinterpretação piorou a reprodução exata.",
+  "active_flow_changed": false,
+  "recommendation": "usar resposta GraphRAG diretamente quando o gate for aprovado; usar geração contextual apenas como fallback controlado e exigir verificação de apoio na fonte"
+}

@@ -1,0 +1,6 @@
+{
+  "input": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\distilacao_dois_professores_piloto.jsonl",
+  "output": "C:\\Users\\Samsung\\Downloads\\brothertrue\\dados_modulos_novos\\distilacao_dois_professores_piloto_limpos.jsonl",
+  "kept": 23,
+  "dropped": 9
+}

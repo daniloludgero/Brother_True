@@ -1,0 +1,82 @@
+{
+  "model": "Voz 50M",
+  "evaluation_type": "direct_causal_lm",
+  "note": "pré-treinamento causal; não é benchmark de instruções",
+  "base": {
+    "parameters": 50497536,
+    "loss": {
+      "loss": 6.792691797018051,
+      "perplexity": 891.3095600293433,
+      "samples": 16
+    },
+    "completions": {
+      "Olá, eu sou": {
+        "text": "olá , eu sou the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      },
+      "Uma conversa clara deve": {
+        "text": "uma conversa clara deve the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      },
+      "The purpose of a good conversation is": {
+        "text": "the purpose of a good conversation is the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      },
+      "If a function receives a number": {
+        "text": "if a function receives a number the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      }
+    }
+  },
+  "lora": {
+    "parameters": 51091456,
+    "trainable_parameters": 593920,
+    "loss": {
+      "loss": 6.810329109430313,
+      "perplexity": 907.1693158005592,
+      "samples": 16
+    },
+    "completions": {
+      "Olá, eu sou": {
+        "text": "olá , eu sou the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      },
+      "Uma conversa clara deve": {
+        "text": "uma conversa clara deve the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      },
+      "The purpose of a good conversation is": {
+        "text": "the purpose of a good conversation is the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      },
+      "If a function receives a number": {
+        "text": "if a function receives a number the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the",
+        "new_tokens": 32,
+        "unique_token_ratio": 0.03125,
+        "repetition_ratio": 0.96875,
+        "ended_eos": false
+      }
+    }
+  }
+}

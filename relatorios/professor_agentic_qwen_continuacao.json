@@ -1,0 +1,13 @@
+{
+  "resume_from": "checkpoints_professor_agentic_qwen/best.pt",
+  "dataset": "dados_professor/deepseek_v4_flash_teacher_distillation.parquet",
+  "rows_used": 4096,
+  "steps_completed": 60,
+  "total_parameters": 495086464,
+  "trainable_parameters": 1053696,
+  "best_val_loss": 2.4884634651243687,
+  "best_checkpoint": "checkpoints_professor_agentic_qwen/continuacao_best.pt",
+  "normalizer": "normalizar_saida_professor_agentic_v2.py",
+  "validation": "saída com final_answer e argumentos convertível em tool_calls canônicos",
+  "parquet_status": "preservado_para_continuacao"
+}

@@ -1,0 +1,25 @@
+{
+  "qualified_dataset": {
+    "rows": 467,
+    "brief": 83,
+    "complex": 384,
+    "filtered_brief_candidates": 13,
+    "path": "dados_modulos_novos/distilacao_dois_professores_qualificada.jsonl"
+  },
+  "training": {
+    "steps": 200,
+    "best_step": 150,
+    "best_val_loss": 5.7957790940999985,
+    "total_parameters": 50500611,
+    "trainable_parameters": 593944,
+    "checkpoint": "checkpoints_voz_lora_dois_professores_qualificado/best.pt"
+  },
+  "generation_gate": {
+    "approved": false,
+    "completion_pattern": "aspas repetidas",
+    "unique_ratio": 0.020833333333333332,
+    "applies_to": ["brief", "complex"]
+  },
+  "next_action": "ajuste parcial de embeddings e lm_head ou treino supervisionado completo controlado",
+  "preserve": true
+}

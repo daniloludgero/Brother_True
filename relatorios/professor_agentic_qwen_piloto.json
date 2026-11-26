@@ -1,0 +1,20 @@
+{
+  "base": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_parameters": 494032768,
+  "total_parameters_after_lora": 495086464,
+  "trainable_parameters": 1053696,
+  "dataset": "dados_professor/deepseek_v4_flash_teacher_distillation.parquet",
+  "dataset_rows": 40513,
+  "rows_used": 1024,
+  "steps": 40,
+  "max_len": 256,
+  "target": "final_answer+tool_calls",
+  "best_val_loss": 2.5229703411459923,
+  "checkpoints": "checkpoints_professor_agentic_qwen",
+  "validation": {
+    "adapter_loaded": true,
+    "tool_call_behavior": "coerente para duas chamadas youtube_topviews_year",
+    "schema_status": "parcial: gera chamadas corretas, mas ainda pode anexar explicação textual"
+  },
+  "cleanup_decision": "preservar_parquet_para_continuacao"
+}
