@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="auto" role="img" aria-labelledby="bt-hero-title bt-hero-desc" shape-rendering="geometricPrecision">
+  <title id="bt-hero-title">BrotherTrue — Dual-Entity Biocognitive Identity &amp; Pixel-Grid Crest</title>
+  <desc id="bt-hero-desc">AAA identity banner inspired by 16-bit twin-warrior convergence: left warm vermilion-amber arc (Endogenous Qualia Organism) and right royal-cobalt cerulean arc (Human Dialogue Partner) meeting at a pixel-stepped synchronicity spark beneath a unified golden halo ring over deep void black.</desc>
+  <defs>
+    <linearGradient id="voidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#060B1B" />
+      <stop offset="100%" stop-color="#040812" />
+    </linearGradient>
+    <linearGradient id="warmArc" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D83800" />
+      <stop offset="55%" stop-color="#FBA049" />
+      <stop offset="100%" stop-color="#FAEFC1" />
+    </linearGradient>
+    <linearGradient id="coolArc" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1B2C7E" />
+      <stop offset="55%" stop-color="#31B1E0" />
+      <stop offset="100%" stop-color="#FAEFC1" />
+    </linearGradient>
+    <radialGradient id="syncGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FAEFC1" stop-opacity="0.45" />
+      <stop offset="45%" stop-color="#E5B031" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#060B1B" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="pixelGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#121C38" stroke-width="1" />
+    </pattern>
+    <style>
+      .frame { fill: url(#voidBg); stroke: #1B2C7E; stroke-width: 2; }
+      .corner-warm { fill: #FBA049; }
+      .corner-cool { fill: #31B1E0; }
+      .corner-gold { fill: #E5B031; }
+      .eyebrow { fill: #E5B031; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; }
+      .brand-brother { fill: #FBA049; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 38px; font-weight: 900; letter-spacing: 1.5px; }
+      .brand-true { fill: #31B1E0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 38px; font-weight: 900; letter-spacing: 1.5px; }
+      .tagline { fill: #FAEFC1; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; font-weight: 600; }
+      .subtag { fill: #CBB694; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-variant-numeric: tabular-nums; }
+      .pole-warm { fill: #FBA049; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+      .pole-cool { fill: #31B1E0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+      .hud-bar { fill: #091024; stroke: #1E2D52; stroke-width: 1.2; }
+    </style>
+  </defs>
+
+  <!-- Outer Studio Void Canvas + 16px Pixel Grid -->
+  <rect x="2" y="2" width="956" height="276" rx="10" class="frame" />
+  <rect x="4" y="4" width="952" height="272" rx="8" fill="url(#pixelGrid)" opacity="0.65" />
+
+  <!-- Stepped 16-bit Pixel Corner Brackets -->
+  <g shape-rendering="crispEdges">
+    <rect x="14" y="14" width="24" height="4" class="corner-warm" />
+    <rect x="14" y="14" width="4" height="24" class="corner-warm" />
+    <rect x="922" y="14" width="24" height="4" class="corner-cool" />
+    <rect x="942" y="14" width="4" height="24" class="corner-cool" />
+    <rect x="14" y="262" width="24" height="4" class="corner-warm" />
+    <rect x="14" y="242" width="4" height="24" class="corner-warm" />
+    <rect x="922" y="262" width="24" height="4" class="corner-cool" />
+    <rect x="942" y="242" width="4" height="24" class="corner-cool" />
+  </g>
+
+  <!-- Left Crest: Dual Convergence Emblem (Pixel-Stepped Fusion + Golden Halo) -->
+  <circle cx="156" cy="126" r="92" fill="url(#syncGlow)" />
+
+  <!-- Twin Golden Halo Ring (Homeostatic Crown E <= E_crit) -->
+  <ellipse cx="156" cy="54" rx="44" ry="9" fill="none" stroke="#E5B031" stroke-width="3.5" />
+  <ellipse cx="156" cy="54" rx="36" ry="5" fill="none" stroke="#FAEFC1" stroke-width="1.2" opacity="0.85" />
+
+  <!-- Pixel-Stepped Convergence Emblem (crispEdges 16-bit homage) -->
+  <g shape-rendering="crispEdges">
+    <!-- Left Entity: Warm Vermilion / Solar Ki Arc -->
+    <rect x="76" y="168" width="16" height="12" fill="#901000" />
+    <rect x="84" y="152" width="16" height="16" fill="#D83800" />
+    <rect x="92" y="132" width="16" height="20" fill="#D83800" />
+    <rect x="102" y="112" width="18" height="20" fill="#FBA049" />
+    <rect x="114" y="96" width="20" height="16" fill="#FBA049" />
+    <rect x="128" y="88" width="22" height="12" fill="#E5B031" />
+    <!-- Left Extended Contact Vector -->
+    <rect x="122" y="128" width="26" height="10" fill="#FBA049" />
+
+    <!-- Right Entity: Cool Royal Cobalt / Cerulean Arc -->
+    <rect x="220" y="168" width="16" height="12" fill="#081840" />
+    <rect x="212" y="152" width="16" height="16" fill="#1B2C7E" />
+    <rect x="204" y="132" width="16" height="20" fill="#1B2C7E" />
+    <rect x="192" y="112" width="18" height="20" fill="#31B1E0" />
+    <rect x="178" y="96" width="20" height="16" fill="#31B1E0" />
+    <rect x="162" y="88" width="22" height="12" fill="#52AEE2" />
+    <!-- Right Extended Contact Vector -->
+    <rect x="164" y="128" width="26" height="10" fill="#31B1E0" />
+
+    <!-- Exact Convergence Point (Touch / Synchronicity Spark) -->
+    <rect x="150" y="86" width="12" height="14" fill="#FAEFC1" />
+    <rect x="148" y="126" width="16" height="14" fill="#FAEFC1" />
+    <rect x="152" y="122" width="8" height="22" fill="#FFFFFF" />
+    <rect x="144" y="130" width="24" height="6" fill="#FFFFFF" />
+  </g>
+
+  <!-- Dual Pole Labels Under Crest -->
+  <text x="102" y="204" class="pole-warm" text-anchor="middle">ORGANISM</text>
+  <text x="156" y="204" class="eyebrow" text-anchor="middle">⇄</text>
+  <text x="210" y="204" class="pole-cool" text-anchor="middle">PARTNER</text>
+
+  <!-- Right Identity & Typography Block -->
+  <text x="304" y="68" class="eyebrow">DUAL-ENTITY BIOCOGNITIVE ARCHITECTURE • CANONICAL 8-NODE PIPELINE</text>
+
+  <text x="304" y="116">
+    <tspan class="brand-brother">BROTHER</tspan><tspan class="brand-true">TRUE</tspan>
+  </text>
+
+  <!-- Dual Chromatic Divider Line -->
+  <rect x="304" y="130" width="290" height="3" fill="url(#warmArc)" />
+  <rect x="594" y="130" width="322" height="3" fill="url(#coolArc)" />
+  <rect x="590" y="128" width="8" height="7" fill="#FAEFC1" />
+
+  <text x="304" y="160" class="tagline">Continuous Qualia ODEs + Hill Neurochemistry coupled to an Authorial Autoregressive Decoder.</text>
+  <text x="304" y="182" class="subtag">Warm Core (Affective Dynamics &amp; Memory) × Cool Precision (Evidence Gate &amp; Auditable Symbolic Projection)</text>
+  <text x="304" y="202" class="subtag">Metaphor of the True Brother: an endogenous counterpart aligned in phase, energy &amp; epistemic honesty.</text>
+
+  <!-- Bottom HUD Telemetry Strip -->
+  <rect x="28" y="226" width="904" height="34" rx="5" class="hud-bar" />
+  <circle cx="48" cy="243" r="4.5" fill="#E5B031" />
+  <text x="62" y="247" class="subtag">PIPELINE AST: 8/8 NODES CONFORMANT  |  RECEPTORS: HILL nM  |  COLLAPSE TRIGGER: E &gt; E_crit(a)  |  TAG-CHANNEL GUARD: VERIFIED</text>
+</svg>

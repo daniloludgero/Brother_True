@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="auto" role="img" aria-labelledby="dyn-title dyn-desc">
+  <title id="dyn-title">QualiaODE Energy Collapse Containment &amp; Homeostatic Halo Dynamics</title>
+  <desc id="dyn-desc">Comparative diagnostic chart showing unconstrained exponential runaway (L, Q approaching infinity in vermilion red) versus BrotherTrue's mandatory apply_collapse(X, E, E_crit) containment keeping energy E = 0.5L + 0.5Q bounded below the Golden Halo threshold E_crit(a) = E_0 + eta_E * a in cerulean blue.</desc>
+  <defs>
+    <style>
+      .bg { fill: #060B1B; stroke: #1B2C7E; stroke-width: 2; }
+      .panel { fill: #0C1326; stroke: #21325E; stroke-width: 1.5; rx: 8; }
+      .grid { stroke: #162244; stroke-width: 1; }
+      .title { fill: #FAEFC1; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13.5px; font-weight: 800; }
+      .sub { fill: #CBB694; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-variant-numeric: tabular-nums; }
+      .lbl-gold { fill: #E5B031; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; }
+      .lbl-fail { fill: #FF6B4A; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; }
+      .lbl-pass { fill: #31B1E0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; }
+      .halo-line { stroke: #E5B031; stroke-width: 2; stroke-dasharray: 6,4; }
+      .curve-runaway { stroke: #D83800; stroke-width: 2.5; fill: none; stroke-dasharray: 4,3; }
+      .curve-guarded { stroke: #31B1E0; stroke-width: 2.8; fill: none; }
+      .card { fill: #111A36; stroke: #263868; stroke-width: 1.2; rx: 6; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="276" rx="10" class="bg" />
+  <rect x="18" y="16" width="924" height="248" class="panel" />
+
+  <text x="38" y="44" class="title">HOMEOSTATIC HALO CONTAINMENT — WHY MANDATORY COLLAPSE PREVENTS ODE RUNAWAY</text>
+  <text x="920" y="44" class="lbl-gold" text-anchor="end">Threshold: E_crit(a) = E_0 + η_E · a</text>
+
+  <!-- Plot Area (x: 60..610, y: 66..230) -->
+  <line x1="60" y1="230" x2="610" y2="230" class="grid" />
+  <line x1="60" y1="185" x2="610" y2="185" class="grid" />
+  <line x1="60" y1="140" x2="610" y2="140" class="grid" />
+  <line x1="60" y1="95"  x2="610" y2="95"  class="grid" />
+  <line x1="60" y1="66"  x2="60"  y2="230" class="grid" />
+
+  <!-- Golden Halo Critical Threshold Line -->
+  <line x1="60" y1="118" x2="610" y2="112" class="halo-line" />
+  <text x="68" y="109" class="lbl-gold">E_crit(a) — Golden Halo Trigger Threshold</text>
+
+  <!-- Unconstrained Runaway Curve (Vermilion) -->
+  <path d="M 60 205 Q 160 190, 230 150 T 345 64" class="curve-runaway" />
+  <circle cx="345" cy="64" r="4.5" fill="#D83800" />
+  <text x="356" y="70" class="lbl-fail">Unconstrained ODE: E → ∞ (loss_p explosion)</text>
+
+  <!-- Guarded BrotherTrue Trajectory (Cerulean + Solar Spark Resets) -->
+  <path d="M 60 205 Q 150 188, 220 116 L 228 176 Q 310 152, 390 114 L 398 172 Q 495 145, 600 132" class="curve-guarded" />
+  <!-- Collapse Reset Sparks -->
+  <rect x="216" y="112" width="8" height="8" fill="#FAEFC1" stroke="#FBA049" stroke-width="1.5" />
+  <rect x="386" y="110" width="8" height="8" fill="#FAEFC1" stroke="#FBA049" stroke-width="1.5" />
+  <text x="412" y="192" class="lbl-pass">Damped Trajectory: exp(-k_c) step + Hill Neuro update</text>
+
+  <text x="60" y="248" class="sub">Multi-Turn Dialogue Time (t) →</text>
+  <text x="598" y="248" class="sub" text-anchor="end">Energy E = 0.5·L + 0.5·Q</text>
+
+  <!-- Right Invariant Proof Summary Cards -->
+  <rect x="632" y="66" width="292" height="56" class="card" />
+  <text x="646" y="86" class="lbl-fail">1. WITHOUT HALO GUARD (BROKEN)</text>
+  <text x="646" y="103" class="sub">High semantic drive H_t pushes L, Q → ∞;</text>
+  <text x="646" y="116" class="sub">Pensamento MSE &amp; KL diverge to NaN.</text>
+
+  <rect x="632" y="130" width="292" height="56" class="card" />
+  <text x="646" y="150" class="lbl-gold">2. COLLAPSE + HILL NEURO (CONTAINED)</text>
+  <text x="646" y="167" class="sub">Pre-introspection collapse resets X &amp; triggers</text>
+  <text x="646" y="180" class="sub">physiological GABA/Serotonin compensation.</text>
+
+  <rect x="632" y="194" width="292" height="54" class="card" />
+  <text x="646" y="214" class="lbl-pass">3. EPISTEMIC RESULT (VERIFIED)</text>
+  <text x="646" y="231" class="sub">Bounded state_history, stable loss_p, and</text>
+  <text x="646" y="243" class="sub">calibrated directive inside &lt;thought&gt;.</text>
+</svg>

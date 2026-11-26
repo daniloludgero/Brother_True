@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use BrotherTrue, its Qualia ODE + Hill receptor coupling, or its 8-node epistemic pipeline in academic or engineering work, please cite it using the metadata below."
+type: software
+title: "BrotherTrue: Open-System Biocognitive Architecture with Continuous Qualia ODEs, Hill Neurochemistry, and Grounded Symbolic Conditioning"
+version: 0.5.0-alpha
+date-released: 2026-11-25
+license: MIT
+repository-code: "https://github.com/daniloludgero/Brother_True"
+url: "https://daniloludgero.github.io/Brother_True/"
+authors:
+  - family-names: "Costa"
+    given-names: "Danilo Emanuel Ludgero"
+keywords:
+  - biocognitive-architecture
+  - neural-ode
+  - hill-kinetics
+  - rag-evidence-gate
+  - chain-of-thought
+  - open-cognitive-systems
+  - pytorch

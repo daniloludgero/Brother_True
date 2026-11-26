@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 410" width="100%" height="auto" role="img" aria-labelledby="pipe-title pipe-desc">
+  <title id="pipe-title">BrotherTrue Canonical 8-Node Biocognitive &amp; Epistemic Pipeline</title>
+  <desc id="pipe-desc">Two-row architectural diagram of BrotherTrue.falar(): Row 1 (Warm Solar Ki Pole) transforms User Message through Semantic Encoder, QualiaODE + Neurochemistry + Memory, Pensamento + Palavras, and Structured Biocognitive Record. Row 2 (Cool Cobalt-Cerulean Pole) filters retrieval through RAG Evidence Gate, renders symbolic thought block, conditions the Autoregressive Voz Decoder, and enforces Zero-Leakage Clean Verbal Response under a Golden Halo Homeostasis invariant bar.</desc>
+  <defs>
+    <pattern id="grid16" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#111B36" stroke-width="1" />
+    </pattern>
+    <marker id="arrWarm" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#FBA049" />
+    </marker>
+    <marker id="arrGold" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#E5B031" />
+    </marker>
+    <marker id="arrCool" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#31B1E0" />
+    </marker>
+    <style>
+      .bg { fill: #060B1B; stroke: #1B2C7E; stroke-width: 2; }
+      .hdr-line { stroke: #1E2D52; stroke-width: 1.5; }
+      .title { fill: #FAEFC1; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; font-weight: 800; letter-spacing: 1px; }
+      .subtitle { fill: #CBB694; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-variant-numeric: tabular-nums; }
+      .zone-warm { fill: #0E1020; stroke: #D83800; stroke-width: 1.4; stroke-dasharray: 4,3; rx: 8; }
+      .zone-cool { fill: #091328; stroke: #1B2C7E; stroke-width: 1.4; stroke-dasharray: 4,3; rx: 8; }
+      .card-warm { fill: #121629; stroke: #FBA049; stroke-width: 1.6; rx: 6; }
+      .card-gold { fill: #151828; stroke: #E5B031; stroke-width: 1.8; rx: 6; }
+      .card-cool { fill: #0D1830; stroke: #31B1E0; stroke-width: 1.6; rx: 6; }
+      .card-out  { fill: #0F1E36; stroke: #FAEFC1; stroke-width: 1.8; rx: 6; }
+      .step-num-w { fill: #060B1B; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 900; text-anchor: middle; }
+      .node-h { fill: #F8FAFC; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; font-weight: 800; text-anchor: middle; }
+      .node-p { fill: #CBB694; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.8px; text-anchor: middle; font-variant-numeric: tabular-nums; }
+      .tag-warm { fill: #FBA049; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; font-weight: 700; text-anchor: middle; }
+      .tag-gold { fill: #E5B031; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; font-weight: 700; text-anchor: middle; }
+      .tag-cool { fill: #31B1E0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; font-weight: 700; text-anchor: middle; }
+      .zone-lbl-w { fill: #FBA049; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; }
+      .zone-lbl-c { fill: #31B1E0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; }
+      .footer { fill: #091024; stroke: #E5B031; stroke-width: 1.2; rx: 5; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="406" rx="10" class="bg" />
+  <rect x="4" y="4" width="952" height="402" rx="8" fill="url(#grid16)" opacity="0.6" />
+  <line x1="2" y1="48" x2="958" y2="48" class="hdr-line" />
+
+  <!-- Header -->
+  <text x="24" y="30" class="title">BROTHERTRUE.FALAR() — 8-NODE SYMBIOTIC ARCHITECTURE (WARM DYNAMICS ⇄ COOL RIGOR)</text>
+  <text x="936" y="30" class="subtitle" text-anchor="end">Verified by tests/conferir_arquitetura.py: CONFORME</text>
+
+  <!-- ==================== ROW 1: WARM ENDOGENOUS ORGANISM ==================== -->
+  <rect x="20" y="60" width="920" height="142" class="zone-warm" />
+  <text x="34" y="77" class="zone-lbl-w">PHASE I — ENDOGENOUS BIOCOGNITIVE DYNAMICS (SOLAR KI POLE: CONTINUOUS ODE &amp; INTROSPECTION)</text>
+
+  <!-- Node 1: Message + Semantic Encoder -->
+  <rect x="34" y="88" width="198" height="100" class="card-warm" />
+  <rect x="42" y="95" width="22" height="15" rx="3" fill="#FBA049" />
+  <text x="53" y="106" class="step-num-w">01</text>
+  <text x="138" y="107" class="node-h">SEMANTIC ENCODER</text>
+  <text x="133" y="126" class="node-p">Mensagem → MiniLM Vec</text>
+  <text x="133" y="142" class="node-p">ProjetorSemantico (H_t, η)</text>
+  <text x="133" y="158" class="node-p">.clone() Autograd Boundary</text>
+  <text x="133" y="177" class="tag-warm">semantica.py (nn.Module)</text>
+
+  <path d="M 232 138 L 256 138" stroke="#FBA049" stroke-width="2" fill="none" marker-end="url(#arrWarm)" />
+
+  <!-- Node 2: QualiaODE + Neurochemistry + Memory -->
+  <rect x="258" y="88" width="214" height="100" class="card-warm" />
+  <rect x="266" y="95" width="22" height="15" rx="3" fill="#FBA049" />
+  <text x="277" y="106" class="step-num-w">02</text>
+  <text x="372" y="107" class="node-h">QUALIA ODE + NEURO + MEM</text>
+  <text x="365" y="126" class="node-p">dX/dt → (L, Q, F), E=0.5(L+Q)</text>
+  <text x="365" y="142" class="node-p">If E &gt; E_crit: apply_collapse()</text>
+  <text x="365" y="158" class="node-p">8 Hill nM Neuro + SQLite LTP</text>
+  <text x="365" y="177" class="tag-warm">ode.py • neuroquimica.py</text>
+
+  <path d="M 472 138 L 496 138" stroke="#FBA049" stroke-width="2" fill="none" marker-end="url(#arrWarm)" />
+
+  <!-- Node 3: Pensamento + Palavras -->
+  <rect x="498" y="88" width="202" height="100" class="card-warm" />
+  <rect x="506" y="95" width="22" height="15" rx="3" fill="#FBA049" />
+  <text x="517" y="106" class="step-num-w">03</text>
+  <text x="606" y="107" class="node-h">PENSAMENTO + PALAVRAS</text>
+  <text x="599" y="126" class="node-p">Strict t-1 Window → (L̂, Q̂, F̂)</text>
+  <text x="599" y="142" class="node-p">Introspective Error: loss_p</text>
+  <text x="599" y="158" class="node-p">Epistemic Surprise: KL Div</text>
+  <text x="599" y="177" class="tag-warm">Zero Target Leakage</text>
+
+  <path d="M 700 138 L 724 138" stroke="#E5B031" stroke-width="2" fill="none" marker-end="url(#arrGold)" />
+
+  <!-- Node 4: Structured Biocognitive Record -->
+  <rect x="726" y="88" width="200" height="100" class="card-gold" />
+  <rect x="734" y="95" width="22" height="15" rx="3" fill="#E5B031" />
+  <text x="745" y="106" class="step-num-w">04</text>
+  <text x="833" y="107" class="node-h">BIOCOGNITIVE RECORD</text>
+  <text x="826" y="126" class="node-p">BiocognitiveReasoning</text>
+  <text x="826" y="142" class="node-p">Pre-Decoder Snapshot</text>
+  <text x="826" y="158" class="node-p">11D Humor + 20D State Layout</text>
+  <text x="826" y="177" class="tag-gold">Fusion Bridge (Warm → Cool)</text>
+
+  <!-- Synchronicity Turn Connector (Node 04 down to Node 05) -->
+  <path d="M 826 188 L 826 210 L 133 210 L 133 236" stroke="#E5B031" stroke-width="2.2" fill="none" marker-end="url(#arrCool)" />
+  <rect x="418" y="201" width="124" height="16" rx="4" fill="#060B1B" stroke="#E5B031" stroke-width="1.2" />
+  <text x="480" y="212" class="tag-gold">FUSION HANDOFF ⇄</text>
+
+  <!-- ==================== ROW 2: COOL EPISTEMIC GOVERNANCE & SPEECH ==================== -->
+  <rect x="20" y="220" width="920" height="136" class="zone-cool" />
+  <text x="34" y="235" class="zone-lbl-c">PHASE II — EPISTEMIC GROUNDING &amp; VERBAL DECODING (COBALT-CERULEAN POLE: DISCIPLINED EXPRESSIVITY)</text>
+
+  <!-- Node 5: Evidence Gate -->
+  <rect x="34" y="244" width="198" height="98" class="card-cool" />
+  <rect x="42" y="251" width="22" height="15" rx="3" fill="#31B1E0" />
+  <text x="53" y="262" class="step-num-w">05</text>
+  <text x="138" y="263" class="node-h">RAG EVIDENCE GATE</text>
+  <text x="133" y="282" class="node-p">Vector DB + LTP Candidates</text>
+  <text x="133" y="298" class="node-p">Confidence &amp; Margin Filter</text>
+  <text x="133" y="314" class="node-p">Tag-Injection Sanitizer</text>
+  <text x="133" y="332" class="tag-cool">models/evidence_gate.py</text>
+
+  <path d="M 232 293 L 256 293" stroke="#31B1E0" stroke-width="2" fill="none" marker-end="url(#arrCool)" />
+
+  <!-- Node 6: Symbolic <thought> Renderer -->
+  <rect x="258" y="244" width="214" height="98" class="card-gold" />
+  <rect x="266" y="251" width="22" height="15" rx="3" fill="#E5B031" />
+  <text x="277" y="262" class="step-num-w">06</text>
+  <text x="372" y="263" class="node-h">&lt;THOUGHT&gt; RENDERER</text>
+  <text x="365" y="282" class="node-p">Auditable State Projection</text>
+  <text x="365" y="298" class="node-p">+ Gate-Filtered Evidences</text>
+  <text x="365" y="314" class="node-p">Deterministic Control Block</text>
+  <text x="365" y="332" class="tag-gold">models/thought_renderer.py</text>
+
+  <path d="M 472 293 L 496 293" stroke="#31B1E0" stroke-width="2" fill="none" marker-end="url(#arrCool)" />
+
+  <!-- Node 7: Autoregressive Decoder -->
+  <rect x="498" y="244" width="202" height="98" class="card-cool" />
+  <rect x="506" y="251" width="22" height="15" rx="3" fill="#31B1E0" />
+  <text x="517" y="262" class="step-num-w">07</text>
+  <text x="606" y="263" class="node-h">OWN DECODER (VOZ)</text>
+  <text x="599" y="282" class="node-p">Authorial From-Scratch Student</text>
+  <text x="599" y="298" class="node-p">Cross-Attn + &lt;thought&gt; Prefix</text>
+  <text x="599" y="314" class="node-p">Voz • VozDistribuida • OwnVoice</text>
+  <text x="599" y="332" class="tag-cool">voz.py (nn.Module)</text>
+
+  <path d="M 700 293 L 724 293" stroke="#31B1E0" stroke-width="2" fill="none" marker-end="url(#arrCool)" />
+
+  <!-- Node 8: Clean Verbal Response -->
+  <rect x="726" y="244" width="200" height="98" class="card-out" />
+  <rect x="734" y="251" width="22" height="15" rx="3" fill="#FAEFC1" />
+  <text x="745" y="262" class="step-num-w">08</text>
+  <text x="833" y="263" class="node-h">CLEAN VERBAL SPEECH</text>
+  <text x="826" y="282" class="node-p">DeepSeekCoTParser.parse()</text>
+  <text x="826" y="298" class="node-p">Strips &lt;thought&gt; &amp; Control Tags</text>
+  <text x="826" y="314" class="node-p">Separate Diagnostic Envelope</text>
+  <text x="826" y="332" class="tag-gold">Verified Tag-Channel Separation</text>
+
+  <!-- Golden Halo Homeostasis Footer -->
+  <rect x="20" y="366" width="920" height="30" class="footer" />
+  <text x="480" y="385" class="subtitle" text-anchor="middle">GOLDEN HALO CONTRACTS: Collapse Damping Triggered on E &gt; E_crit(a)  |  Strict t-1 Introspection  |  Transactional SQLite  |  Audited Tag Separation</text>
+</svg>

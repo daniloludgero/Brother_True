@@ -1,0 +1,293 @@
+/* BrotherTrue Interactive Biocognitive Lab — W3C DTCG 3-Tier Token Architecture */
+:root {
+  /* Tier 1: Brand Primitives (Strictly isolated — never consumed directly by components) */
+  --bt-brand-void-abyss: #000000;
+  --bt-brand-void-cosmos: #060b1b;
+  --bt-brand-void-indigo: #0c1326;
+  --bt-brand-void-elevated: #111b36;
+  --bt-brand-warm-vermilion: #d83800;
+  --bt-brand-warm-amber: #fba049;
+  --bt-brand-cool-cobalt: #1b2c7e;
+  --bt-brand-cool-cerulean: #31b1e0;
+  --bt-brand-sync-gold: #e5b031;
+  --bt-brand-sync-cream: #faefc1;
+  --bt-brand-sync-sand: #cbb694;
+  --bt-brand-sync-white: #f8fafc;
+
+  /* Tier 2: Semantic & Theme Tokens */
+  --bt-surface-canvas: var(--bt-brand-void-cosmos);
+  --bt-surface-panel: var(--bt-brand-void-indigo);
+  --bt-surface-elevated: var(--bt-brand-void-elevated);
+  --bt-border-structural: var(--bt-brand-cool-cobalt);
+  --bt-text-primary: var(--bt-brand-sync-white);
+  --bt-text-accent: var(--bt-brand-sync-cream);
+  --bt-text-secondary: var(--bt-brand-sync-sand);
+  --bt-text-inverse: var(--bt-brand-void-cosmos);
+  --bt-pole-warm: var(--bt-brand-warm-amber);
+  --bt-pole-cool: var(--bt-brand-cool-cerulean);
+  --bt-pole-halo: var(--bt-brand-sync-gold);
+  --bt-status-alert: var(--bt-brand-warm-vermilion);
+  --bt-focus-outer: var(--bt-brand-cool-cerulean);
+  --bt-focus-inner: var(--bt-brand-sync-white);
+
+  /* Tier 3: Component Tokens */
+  --bt-cta-primary-bg: var(--bt-pole-warm);
+  --bt-cta-primary-fg: var(--bt-text-inverse);
+  --bt-card-bg: var(--bt-surface-panel);
+  --bt-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --bt-font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bt-surface-canvas);
+  color: var(--bt-text-primary);
+  font-family: var(--bt-font-sans);
+  line-height: 1.55;
+}
+
+.tabular, code, pre, output, .metric-val {
+  font-family: var(--bt-font-mono);
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+/* Concentric Dual-Ring Focus Indicator (WCAG 2.2 SC 2.4.11 / 2.4.13) */
+:focus-visible {
+  outline: 2px solid var(--bt-focus-outer);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--bt-focus-inner);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 100;
+  padding: 8px 14px;
+  background: var(--bt-cta-primary-bg);
+  color: var(--bt-cta-primary-fg);
+  font-weight: 700;
+  border-radius: 6px;
+}
+.skip-link:focus { left: 12px; }
+
+.disclaimer-banner {
+  background: #14101e;
+  border-bottom: 1px solid var(--bt-pole-halo);
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  color: var(--bt-text-accent);
+}
+.disclaimer-inner, .container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.badge-caution {
+  display: inline-block;
+  background: var(--bt-pole-halo);
+  color: var(--bt-text-inverse);
+  font-family: var(--bt-font-mono);
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--bt-border-structural);
+  padding: 28px 20px 24px;
+  background: radial-gradient(circle at 18% 20%, rgba(251, 160, 73, 0.08), transparent 45%),
+              radial-gradient(circle at 82% 20%, rgba(49, 177, 224, 0.08), transparent 45%);
+}
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--bt-pole-halo);
+  font-family: var(--bt-font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 0 0 10px;
+  font-family: var(--bt-font-mono);
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  letter-spacing: 0.03em;
+}
+.brand-warm { color: var(--bt-pole-warm); }
+.brand-cool { color: var(--bt-pole-cool); }
+.subtitle {
+  margin: 0;
+  max-width: 820px;
+  color: var(--bt-text-secondary);
+  font-size: 0.96rem;
+}
+
+.header-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Single Primary CTA per Viewport (Hick-Hyman Law) */
+.btn-primary {
+  background: var(--bt-cta-primary-bg);
+  color: var(--bt-cta-primary-fg);
+  border: 2px solid var(--bt-cta-primary-bg);
+  font-family: var(--bt-font-mono);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 140ms ease, opacity 140ms ease;
+}
+.btn-primary:hover { transform: translateY(-1px); opacity: 0.94; }
+.btn-primary[aria-busy="true"] { opacity: 0.65; cursor: wait; }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--bt-pole-cool);
+  border: 1px solid var(--bt-pole-cool);
+  font-family: var(--bt-font-mono);
+  font-weight: 700;
+  font-size: 0.86rem;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 140ms ease;
+}
+.btn-secondary:hover { opacity: 0.85; }
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  padding: 24px 20px 44px;
+}
+
+.panel {
+  background: var(--bt-card-bg);
+  border: 1px solid var(--bt-border-structural);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+.panel-warm { border-top: 3px solid var(--bt-pole-warm); }
+.panel-cool { border-top: 3px solid var(--bt-pole-cool); }
+.panel-halo { border-top: 3px solid var(--bt-pole-halo); grid-column: 1 / -1; }
+
+.panel h2 {
+  margin: 0 0 12px;
+  font-family: var(--bt-font-mono);
+  font-size: 1rem;
+  color: var(--bt-text-accent);
+}
+
+.control-row {
+  margin-bottom: 14px;
+}
+.control-row label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.86rem;
+  color: var(--bt-text-secondary);
+  margin-bottom: 4px;
+}
+.control-row input[type="range"] {
+  width: 100%;
+  accent-color: var(--bt-pole-warm);
+}
+.panel-cool .control-row input[type="range"] {
+  accent-color: var(--bt-pole-cool);
+}
+select, input[type="text"] {
+  width: 100%;
+  background: var(--bt-surface-elevated);
+  color: var(--bt-text-primary);
+  border: 1px solid var(--bt-border-structural);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-family: var(--bt-font-mono);
+  font-size: 0.86rem;
+}
+
+.metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.metric-box {
+  background: var(--bt-surface-elevated);
+  border: 1px solid #1e2f5d;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+.metric-lbl {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--bt-text-secondary);
+  text-transform: uppercase;
+}
+.metric-val {
+  display: block;
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--bt-text-primary);
+  margin-top: 2px;
+}
+.status-pill {
+  display: inline-block;
+  font-family: var(--bt-font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.status-ok { background: rgba(49, 177, 224, 0.16); color: var(--bt-pole-cool); border: 1px solid var(--bt-pole-cool); }
+.status-collapse { background: rgba(216, 56, 0, 0.22); color: var(--bt-pole-warm); border: 1px solid var(--bt-status-alert); }
+
+.dual-channels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+pre.channel-box {
+  margin: 0;
+  padding: 14px;
+  background: #050915;
+  border: 1px solid #1e2d52;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 150px;
+}
+.channel-thought { border-left: 3px solid var(--bt-pole-halo); color: var(--bt-text-accent); }
+.channel-speech  { border-left: 3px solid var(--bt-pole-cool); color: var(--bt-text-primary); }
+
+.site-footer {
+  border-top: 1px solid var(--bt-border-structural);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--bt-text-secondary);
+}
+
+/* Vestibular Protection (WCAG 2.2) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+}

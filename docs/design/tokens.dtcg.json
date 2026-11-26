@@ -1,0 +1,61 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "brand": {
+    "void": {
+      "abyss": { "$value": "#000000", "$type": "color", "$description": "16-bit absolute void frame (Image 1 & 4)" },
+      "cosmos": { "$value": "#060B1B", "$type": "color", "$description": "Deep night cosmos canvas (Image 4)" },
+      "indigo": { "$value": "#0C1326", "$type": "color", "$description": "Elevated tactical panel surface" }
+    },
+    "brother_warm": {
+      "crimson_shadow": { "$value": "#901000", "$type": "color", "$description": "Deep gi shadow crimson (Image 1)" },
+      "vermilion_ki": { "$value": "#D83800", "$type": "color", "$description": "Primary warm vermilion drive (Image 1)" },
+      "solar_amber": { "$value": "#FBA049", "$type": "color", "$description": "High-contrast luminous solar amber (Image 4)" }
+    },
+    "true_cool": {
+      "midnight_armor": { "$value": "#081840", "$type": "color", "$description": "Deep midnight cobalt shadow (Image 1)" },
+      "royal_cobalt": { "$value": "#1B2C7E", "$type": "color", "$description": "Structural royal cobalt border (Image 1)" },
+      "cerulean_horizon": { "$value": "#31B1E0", "$type": "color", "$description": "Clear horizon cerulean accent (Image 2)" }
+    },
+    "synchronicity": {
+      "halo_gold": { "$value": "#E5B031", "$type": "color", "$description": "Homeostatic crown halo gold (Image 1 & 4)" },
+      "fusion_cream": { "$value": "#FAEFC1", "$type": "color", "$description": "Convergence spark highlight (Image 4)" },
+      "desert_ochre": { "$value": "#CBB694", "$type": "color", "$description": "Muted canyon sand neutral (Image 2)" },
+      "pure_spark": { "$value": "#F8FAFC", "$type": "color", "$description": "Crisp white focal highlight (Image 3)" }
+    }
+  },
+  "semantic": {
+    "surface": {
+      "canvas": { "$value": "{brand.void.cosmos}", "$type": "color" },
+      "panel": { "$value": "{brand.void.indigo}", "$type": "color" },
+      "border": { "$value": "{brand.true_cool.royal_cobalt}", "$type": "color" }
+    },
+    "text": {
+      "primary": { "$value": "{brand.synchronicity.pure_spark}", "$type": "color" },
+      "accent": { "$value": "{brand.synchronicity.fusion_cream}", "$type": "color" },
+      "secondary": { "$value": "{brand.synchronicity.desert_ochre}", "$type": "color" },
+      "inverse": { "$value": "{brand.void.cosmos}", "$type": "color" }
+    },
+    "pole": {
+      "endogenous_warm": { "$value": "{brand.brother_warm.solar_amber}", "$type": "color" },
+      "epistemic_cool": { "$value": "{brand.true_cool.cerulean_horizon}", "$type": "color" },
+      "homeostasis_halo": { "$value": "{brand.synchronicity.halo_gold}", "$type": "color" }
+    },
+    "status": {
+      "grounded": { "$value": "{brand.true_cool.cerulean_horizon}", "$type": "color" },
+      "caution": { "$value": "{brand.synchronicity.halo_gold}", "$type": "color" },
+      "collapse_alert": { "$value": "{brand.brother_warm.vermilion_ki}", "$type": "color" }
+    }
+  },
+  "component": {
+    "cta_primary": {
+      "bg": { "$value": "{semantic.pole.endogenous_warm}", "$type": "color" },
+      "text": { "$value": "{semantic.text.inverse}", "$type": "color" }
+    },
+    "node_card": {
+      "bg": { "$value": "{semantic.surface.panel}", "$type": "color" },
+      "border_warm": { "$value": "{semantic.pole.endogenous_warm}", "$type": "color" },
+      "border_cool": { "$value": "{semantic.pole.epistemic_cool}", "$type": "color" },
+      "border_halo": { "$value": "{semantic.pole.homeostasis_halo}", "$type": "color" }
+    }
+  }
+}

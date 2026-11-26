@@ -1,0 +1,9 @@
+# Code Owners — BrotherTrue Canonical Architecture & Epistemic Contracts
+* @daniloludgero
+/brothertrue.py @daniloludgero
+/ode.py @daniloludgero
+/farmacologia.py @daniloludgero
+/voz.py @daniloludgero
+/models/ @daniloludgero
+/experimentos/industrial_readiness_2026_10_25/ @daniloludgero
+/docs/design/ @daniloludgero

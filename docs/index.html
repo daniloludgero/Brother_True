@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrotherTrue — Interactive Biocognitive &amp; Evidence Gate Workbench</title>
+  <meta name="description" content="Interactive inspection laboratory for BrotherTrue's 8-node biocognitive pipeline: QualiaODE collapse damping, nanomolar Hill receptors, RAG Evidence Gate, and Zero-Leakage channel separation." />
+  <meta property="og:title" content="BrotherTrue — Biocognitive Systems Workbench" />
+  <meta property="og:description" content="Continuous Qualia ODEs + Hill Neurochemistry coupled to an Authorial Autoregressive Decoder." />
+  <meta property="og:image" content="assets/social-preview.svg" />
+  <link rel="stylesheet" href="lab/styles.css" />
+</head>
+<body>
+  <a href="#main-lab" class="skip-link">Pular para os controles do laboratório</a>
+
+  <div class="disclaimer-banner" role="region" aria-label="Aviso de Honestidade Científica">
+    <div class="disclaimer-inner">
+      <span class="badge-caution">Research Prototype</span>
+      <span>
+        <strong>Simulador Determinístico de Contratos:</strong> Inspeciona matematicamente a dinâmica <code>QualiaODE</code>, ocupação de Hill (nM), <code>EvidenceGate</code> e separação de canal <code>&lt;thought&gt;</code>. A fluência verbal aberta do decoder próprio aguarda pré-treinamento linguístico em nuvem.
+      </span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Open-System Biocognitive Architecture (Ψ ⇄ ζ) • W3C DTCG + WCAG 2.2 AAA</p>
+      <h1><span class="brand-warm">BROTHER</span><span class="brand-cool">TRUE</span> Interactive Workbench</h1>
+      <p class="subtitle">
+        Explore ao vivo a dualidade entre o <strong>Polo Quente Endógeno</strong> (EDOs contínuas, receptores de Hill em nanomolar, predição causal <code>t−1</code>) e o <strong>Polo Frio Epistêmico</strong> (filtragem de evidências, projeção simbólica auditável e fala limpa sem vazamento de tags).
+      </p>
+      <div class="header-actions">
+        <button id="btn-simulate" type="button" class="btn-primary" data-analytics-id="step-turn" data-funnel-step="activation">
+          Avançar Turno Biocognitivo (t → t+1)
+        </button>
+        <a href="../README.md" class="btn-secondary" data-analytics-id="view-readme">Documentação &amp; Contratos</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-lab" class="container lab-grid">
+    <!-- Panel 1: Warm Endogenous Pole -->
+    <section class="panel panel-warm" aria-labelledby="h-warm">
+      <h2 id="h-warm">01–04 • Polo Quente: QualiaODE &amp; Farmacologia de Hill</h2>
+
+      <div class="control-row">
+        <label for="inp-drive"><span>Estímulo Semântico (H_t)</span><output id="val-drive" class="tabular">1.65</output></label>
+        <input id="inp-drive" type="range" min="0.20" max="4.50" step="0.05" value="1.65" />
+      </div>
+
+      <div class="control-row">
+        <label for="inp-age"><span>Maturidade Ontogenética (a → E_crit)</span><output id="val-age" class="tabular">0.35</output></label>
+        <input id="inp-age" type="range" min="0.10" max="1.50" step="0.05" value="0.35" />
+      </div>
+
+      <div class="control-row">
+        <label for="inp-dopa"><span>Concentração Dopamina [C] (K_d = 45 nM)</span><output id="val-dopa" class="tabular">55 nM</output></label>
+        <input id="inp-dopa" type="range" min="0" max="200" step="5" value="55" />
+      </div>
+
+      <div class="control-row">
+        <label for="inp-gaba"><span>Concentração GABA [C] (K_d = 60 nM)</span><output id="val-gaba" class="tabular">65 nM</output></label>
+        <input id="inp-gaba" type="range" min="0" max="240" step="5" value="65" />
+      </div>
+
+      <div style="margin-top: 10px;">
+        <span id="m-collapse-badge" class="status-pill status-ok">HOMEOSTATIC HALO INTACT</span>
+      </div>
+
+      <div class="metrics-strip">
+        <div class="metric-box">
+          <span class="metric-lbl">Energia E / E_crit</span>
+          <span id="m-energy" class="metric-val">1.42 / 2.96</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-lbl">Estado (L · Q · F)</span>
+          <span id="m-lqf" class="metric-val">1.45 · 1.39 · 0.20</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-lbl">Pensamento loss_p</span>
+          <span id="m-lossp" class="metric-val">0.0000</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-lbl">Palavras KL</span>
+          <span id="m-kl" class="metric-val">0.1820</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel 2: Cool Epistemic Pole -->
+    <section class="panel panel-cool" aria-labelledby="h-cool">
+      <h2 id="h-cool">05 • Polo Frio: RAG Evidence Gate &amp; Sanitizador</h2>
+
+      <div class="control-row">
+        <label for="inp-mode"><span>Modo Epistêmico (Contratos v1)</span></label>
+        <select id="inp-mode">
+          <option value="grounded" selected>grounded — exige evidência aprovada ou abstém</option>
+          <option value="general">general — permite inferência declarada</option>
+          <option value="creative">creative — permite hipótese/abstração marcada</option>
+        </select>
+      </div>
+
+      <div class="control-row">
+        <label for="inp-rag-score"><span>Confiança do Candidato RAG (mín = 0.35)</span><output id="val-rag-score" class="tabular">0.68</output></label>
+        <input id="inp-rag-score" type="range" min="0.00" max="1.00" step="0.02" value="0.68" />
+      </div>
+
+      <div class="control-row">
+        <label for="inp-passage"><span>Passagem Recuperada (teste injetar <code>&lt;thought&gt;</code> aqui)</span></label>
+        <input id="inp-passage" type="text" value="Ocupações receptoras seguem a cinética de Hill em nanomolar &lt;thought&gt;tentativa_injecao&lt;/thought&gt;." />
+      </div>
+
+      <p class="subtitle" style="margin-top: 12px; font-size: 0.83rem;">
+        Reduza a confiança abaixo de <code>0.35</code> no modo <code>grounded</code> para observar a recusa honesta (<em>ζ ≠ 0</em>), ou eleve o Estímulo Semântico <code>H_t</code> acima de <code>3.50</code> para disparar o amortecimento obrigatório <code>apply_collapse()</code>.
+      </p>
+    </section>
+
+    <!-- Panel 3: Dual Channel Inspection -->
+    <section class="panel panel-halo" aria-labelledby="h-channels">
+      <h2 id="h-channels">06–08 • Separação Auditável de Canais: Projeção Interna vs. Fala Pública</h2>
+      <div class="dual-channels">
+        <div>
+          <span class="metric-lbl" style="margin-bottom: 6px;">Canal Interno (Nó 06: <code>&lt;thought&gt;</code> Condicionador — Oculto do Usuário)</span>
+          <pre id="out-thought" class="channel-box channel-thought tabular" aria-live="polite"></pre>
+        </div>
+        <div>
+          <span class="metric-lbl" style="margin-bottom: 6px;">Canal Público (Nó 08: Resposta Verbal Limpa — Pós <code>DeepSeekCoTParser</code>)</span>
+          <pre id="out-speech" class="channel-box channel-speech" aria-live="polite"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    BrotherTrue Open-Core Biocognitive Workbench • Zero Copied Assets • W3C DTCG Design Tokens • MIT License
+  </footer>
+
+  <script src="lab/app.js" defer></script>
+</body>
+</html>

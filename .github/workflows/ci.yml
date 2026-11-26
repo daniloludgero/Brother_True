@@ -1,0 +1,44 @@
+name: CI Quality & Architecture Gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  fast-architecture-and-contract-gates:
+    name: AST 8-Node Verifier, v1 Contracts & Design Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify Canonical 8-Node Pipeline & Inheritance (AST)
+        run: python3 tests/conferir_arquitetura.py
+
+      - name: Run Standard-Library Biocognitive & Epistemic Contracts
+        run: python3 -m unittest discover -s experimentos/industrial_readiness_2026_10_25/tests -p "test_*contract*.py" -v
+
+      - name: Compile Core Python Modules & Validate SVGs + W3C DTCG JSON
+        run: |
+          python3 -m py_compile brothertrue.py voz.py models/evidence_gate.py models/thought_renderer.py models/cot_parser.py
+          python3 -c '
+          import glob, json, xml.etree.ElementTree as ET
+          for svg in glob.glob("docs/assets/*.svg"):
+              ET.parse(svg)
+          tokens = json.load(open("docs/design/tokens.dtcg.json"))
+          assert {"brand", "semantic", "component"}.issubset(tokens.keys())
+          for comp in tokens["component"].values():
+              for prop in comp.values():
+                  assert not str(prop.get("$value", "")).startswith("{brand."), "Tier 3 component token cannot reference Tier 1 brand primitive directly"
+          print("All SVGs and 3-Tier W3C DTCG DAG tokens verified.")
+          '

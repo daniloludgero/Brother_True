@@ -1,0 +1,17 @@
+{
+  "repository": "daniloludgero/Brother_True",
+  "description": "Open-system biocognitive architecture coupling Qualia ODEs & Hill nM kinetics to an authorial decoder with RAG gating.",
+  "homepage": "https://daniloludgero.github.io/Brother_True/",
+  "topics": [
+    "biocognitive-architecture",
+    "neural-ode",
+    "cognitive-architecture",
+    "rag",
+    "chain-of-thought",
+    "neuro-symbolic-ai",
+    "pytorch",
+    "python"
+  ],
+  "license": "MIT",
+  "default_branch": "main"
+}
